@@ -25,7 +25,7 @@ namespace Solution.Scripts.Source.Handlers
                 if (i >= inventoryItemsHolder.Items.Count)
                 {
                     inventoryCell.Icon.sprite = null;
-                    inventoryCell.Icon.color = new Color(0, 0, 0, 0);
+                    inventoryCell.Icon.color = Color.clear;
                     return;
                 }
 

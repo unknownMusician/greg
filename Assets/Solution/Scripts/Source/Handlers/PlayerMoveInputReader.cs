@@ -10,7 +10,7 @@ namespace Solution.Scripts.Source.Handlers
         [EventHandler]
         private static void Handle(
             UpdateEvent _
-            )
+        )
         {
             var direction = Vector3.zero;
 
@@ -32,6 +32,11 @@ namespace Solution.Scripts.Source.Handlers
             if (Input.GetKey(KeyCode.D))
             {
                 direction += Vector3.right;
+            }
+
+            if (direction != Vector3.zero)
+            {
+                direction.Normalize();
             }
             
             EventContext.Bus.Invoke(new PlayerMoveInputEvent

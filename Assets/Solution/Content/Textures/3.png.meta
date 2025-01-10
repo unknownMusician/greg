@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 606428d1cb9f38d4a9a775c1564ee214
+guid: a0311ac4b667cfb4da3fd36f5d469001
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5165961028442364357
-    second: pudge_0
+      213: -6470460504253458178
+    second: 3_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pudge_0
+      name: 3_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 151
-        width: 1258
-        height: 884
+        x: 1
+        y: 0
+        width: 49
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5c991d75f2e21b740800000000000000
-      internalID: 5165961028442364357
+      spriteID: ef817ce047e4436a0800000000000000
+      internalID: -6470460504253458178
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pudge_0: 5165961028442364357
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
