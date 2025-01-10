@@ -7,6 +7,6 @@ namespace Greg.Global.Holders
     [CreateAssetMenu(menuName = "BuiltDataHolder", fileName = "BuiltDataHolder", order = 0)]
     public sealed class BuiltDataHolder : ScriptableObject
     {
-        
+        [field: SerializeField] public float PlayerSpeed { get; private set; }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using AreYouFruits.Events;
 using Greg.Utils.TagSearcher;
+using Solution.Scripts.Source.Handlers;
 using UnityEngine;
 
 namespace Greg.Global
@@ -10,6 +11,9 @@ namespace Greg.Global
         public void Register(EventBus eventBus)
         {
             eventBus.Subscribe(new InitializeResources());
+            eventBus.Subscribe(new PlayerMoveInputReader());
+            eventBus.Subscribe(new PlayerMover());
+            eventBus.Subscribe(new PlayerRotator());
         }
     }
 }
