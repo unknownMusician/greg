@@ -1,0 +1,68 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "AreYouFruits.Events/1.0.0": {
+        "dependencies": {
+          "AreYouFruits.Collections": "1.0.0",
+          "AreYouFruits.Disposables": "1.0.0",
+          "AreYouFruits.Nullability": "1.0.0"
+        },
+        "runtime": {
+          "AreYouFruits.Events.dll": {}
+        }
+      },
+      "AreYouFruits.Collections/1.0.0": {
+        "runtime": {
+          "AreYouFruits.Collections.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AreYouFruits.Disposables/1.0.0": {
+        "runtime": {
+          "AreYouFruits.Disposables.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "AreYouFruits.Nullability/1.0.0": {
+        "runtime": {
+          "AreYouFruits.Nullability.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AreYouFruits.Events/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AreYouFruits.Collections/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AreYouFruits.Disposables/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AreYouFruits.Nullability/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
