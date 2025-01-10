@@ -14,7 +14,7 @@ namespace Solution.Scripts.Source.Handlers
             BuiltDataHolder builtDataHolder
         )
         {
-            sceneDataHolder.Player.transform.position += @event.Direction * builtDataHolder.PlayerSpeed * Time.deltaTime;
+            sceneDataHolder.Player.GetComponent<Rigidbody2D>().linearVelocity = @event.Direction * builtDataHolder.PlayerSpeed;
         }
     }
 }

@@ -33,11 +33,6 @@ namespace Solution.Scripts.Source.Handlers
             {
                 direction += Vector3.right;
             }
-
-            if (direction == Vector3.zero)
-            {
-                return;
-            }
             
             EventContext.Bus.Invoke(new PlayerMoveInputEvent
             {

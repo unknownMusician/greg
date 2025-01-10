@@ -13,6 +13,11 @@ namespace Solution.Scripts.Source.Handlers
             SceneDataHolder sceneDataHolder
         )
         {
+            if (@event.Direction == Vector3.zero)
+            {
+                return;
+            }
+            
             var yRotation = @event.Direction.x > 0 ? 180 : 0;
             sceneDataHolder.Player.transform.eulerAngles = Vector3.up * yRotation;
         }
