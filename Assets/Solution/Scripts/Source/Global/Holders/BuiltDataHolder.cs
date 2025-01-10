@@ -8,5 +8,6 @@ namespace Greg.Global.Holders
     public sealed class BuiltDataHolder : ScriptableObject
     {
         [field: SerializeField] public float PlayerSpeed { get; private set; }
+        [field: SerializeField] public float StealDistance { get; private set; }
     }
 }

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: BuiltDataHolder
   m_EditorClassIdentifier: 
   <PlayerSpeed>k__BackingField: 5
+  <StealDistance>k__BackingField: 1

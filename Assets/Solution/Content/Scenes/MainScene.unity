@@ -167,6 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecf31e367cb740bcaea8f1c009643bef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <EnvironmentContainer>k__BackingField: {fileID: 1191130553}
   <Player>k__BackingField: {fileID: 1405710785}
 --- !u!114 &750091592
 MonoBehaviour:
@@ -219,6 +220,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1191130553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3054790141703961198, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
+  m_PrefabInstance: {fileID: 6882487994833944643}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1405710785 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 929875050128326587, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}

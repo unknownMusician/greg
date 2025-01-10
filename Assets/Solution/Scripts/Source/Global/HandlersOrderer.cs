@@ -1,6 +1,8 @@
 using AreYouFruits.Events;
 using Greg.Events;
+using Greg.Global.Handlers;
 using Greg.Utils.TagSearcher;
+using Solution.Scripts.Source.Handlers;
 using UnityEngine;
 
 namespace Greg.Global
@@ -17,6 +19,8 @@ namespace Greg.Global
         private static void OrderStart(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<StartEvent>();
+            
+            eventOrderer.Order<InitializePredefinedResources>().Before<StealablesHolderInitializer>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)
