@@ -21,6 +21,7 @@ namespace Greg.Global
             var eventOrderer = orderer.ForEvent<StartEvent>();
             
             eventOrderer.Order<InitializePredefinedResources>().Before<StealablesHolderInitializer>();
+            eventOrderer.Order<InitializePredefinedResources>().Before<InventoryViewCreator>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)

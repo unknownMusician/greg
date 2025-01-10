@@ -1,6 +1,5 @@
 using AreYouFruits.Events;
 using Greg.Events;
-using Greg.Global.Holders;
 using Greg.Utils.TagSearcher;
 using UnityEngine;
 

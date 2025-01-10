@@ -1,6 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Global.Holders;
+using Solution.Scripts.Source.Components;
 using Solution.Scripts.Source.Holders;
 using UnityEngine;
 
@@ -13,7 +14,8 @@ namespace Solution.Scripts.Source.Handlers
             PlayerStealInputEvent _,
             StealablesHolder stealablesHolder,
             SceneDataHolder sceneDataHolder,
-            BuiltDataHolder builtDataHolder
+            BuiltDataHolder builtDataHolder,
+            InventoryItemsHolder inventoryItemsHolder
             )
         {
             var shortestDistance = Mathf.Infinity;
@@ -33,6 +35,8 @@ namespace Solution.Scripts.Source.Handlers
                 return;
             }
 
+            inventoryItemsHolder.Add(closestStealable.GetComponent<StealableIdComponent>().Id);
+            
             stealablesHolder.Stealables.Remove(closestStealable);
             Object.Destroy(closestStealable);
         }

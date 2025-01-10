@@ -14,3 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <PlayerSpeed>k__BackingField: 5
   <StealDistance>k__BackingField: 1
+  <InventoryCapacity>k__BackingField: 4
+  <InventoryCellPrefab>k__BackingField: {fileID: 488343677632883471, guid: bab28dec84b431e46bd80303136dbb3e, type: 3}
+  <ItemSettings>k__BackingField:
+  - <Id>k__BackingField: 0
+    <Icon>k__BackingField: {fileID: -7391797651115174431, guid: 21495b862a4572847816b07ca22e3c25, type: 3}

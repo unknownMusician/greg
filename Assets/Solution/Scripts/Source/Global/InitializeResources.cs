@@ -11,6 +11,9 @@ namespace Greg.Global
         public void Handle(StartEvent @event)
         {
             ResourcesLocator.Add(new StealablesHolder());
+            
+            ResourcesLocator.Add(new InventoryItemsHolder());
+            ResourcesLocator.Add(new InventoryViewCellsHolder());
         }
     }
 }
