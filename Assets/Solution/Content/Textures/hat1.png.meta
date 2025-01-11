@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 522a1875b20249143bd80799eccd48c9
+guid: 59d09c8c87c08cb47923b207a19bc10d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2966200626249415253
-    second: 11_0
+      213: 5064564714242801281
+    second: hat1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,27 +96,40 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 11_0
+      name: hat1_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1
-        width: 46
-        height: 79
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 44
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ba5ccdbfe30f5d6d0800000000000000
-      internalID: -2966200626249415253
+      spriteID: 18e7b6e36c2f84640800000000000000
+      internalID: 5064564714242801281
       vertices: []
       indices: 
       edges: []
@@ -125,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 8e08913ad408a4144ab463b71a482340
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      11_0: -2966200626249415253
+      hat1_0: 5064564714242801281
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

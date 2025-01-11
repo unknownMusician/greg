@@ -10,7 +10,7 @@ namespace Greg.Handlers
     {
         [EventHandler]
         private static void Handle(
-            StartEvent _,
+            UpdateEvent _,
             ComponentsResource componentsResource
         )
         {

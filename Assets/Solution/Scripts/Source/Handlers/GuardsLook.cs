@@ -13,14 +13,14 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            SceneDataHolder sceneDataHolder,
+            PlayerObjectHolder playerObjectHolder,
             BuiltDataHolder builtDataHolder,
             ComponentsResource componentsResource
             )
         {
             foreach (var guard in componentsResource.Get<GuardComponent>())
             {
-                var distanceVector = sceneDataHolder.Player.transform.position - guard.transform.position;
+                var distanceVector = playerObjectHolder.GameObject.transform.position - guard.transform.position;
                 if (distanceVector.magnitude > builtDataHolder.GuardLookDistance)
                 {
                     continue;
