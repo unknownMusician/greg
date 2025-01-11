@@ -576,6 +576,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
+    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
+      propertyPath: m_VoxelSize
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
+      propertyPath: m_NavMeshData
+      value: 
+      objectReference: {fileID: 23800000, guid: a5438b4272c86a54dbbc566891f4daf6, type: 2}
+    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
+      propertyPath: m_OverrideVoxelSize
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
