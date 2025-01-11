@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5443858320239043650}
   - component: {fileID: 4375651616452406804}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 2176542931260294179}
   - component: {fileID: 4934189191453184018}
   - component: {fileID: 4349690002658835795}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -250,7 +250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7196568417137734261}
   - component: {fileID: 456582701890718330}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +335,7 @@ GameObject:
   - component: {fileID: 6708940946664912982}
   - component: {fileID: 4200567023098103113}
   - component: {fileID: 4105622780789038891}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ExclamationMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -510,7 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 900801795538970431}
   - component: {fileID: 1589112318278268764}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
