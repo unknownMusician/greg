@@ -16,8 +16,7 @@ namespace Greg.Handlers
         {
             foreach (var guard in componentsResource.Get<GuardComponent>())
             {
-                // var direction = guard.GetComponent<Rigidbody2D>().linearVelocity.normalized;
-                var direction = Vector3.left;
+                var direction = guard.GetComponent<Rigidbody2D>().linearVelocity.normalized;
                 guard.GetComponent<GuardLookDirectionComponent>().Direction = direction;
             }
         }
