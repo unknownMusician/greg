@@ -16,7 +16,7 @@ namespace Greg.Handlers
             BuiltDataHolder builtDataHolder
         )
         {
-            var playerGameObject = Object.Instantiate(builtDataHolder.InnocentPrefab, sceneDataHolder.PlayerSpawnPoint.position, Quaternion.identity);
+            var playerGameObject = Object.Instantiate(builtDataHolder.PlayerPrefab, sceneDataHolder.PlayerSpawnPoint.position, Quaternion.identity);
             EventContext.Bus.Invoke(new CharacterSpawnedEvent
             {
                 CharacterType = CharacterType.Player, 
