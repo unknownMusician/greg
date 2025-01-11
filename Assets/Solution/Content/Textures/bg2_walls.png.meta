@@ -117,7 +117,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 2
         width: 1920
         height: 1017
       alignment: 0
@@ -183,11 +183,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1434
-        y: 692
+        y: 705
         width: 486
-        height: 96
+        height: 83
       alignment: 9
-      pivot: {x: -0.97530866, y: -1.5833334}
+      pivot: {x: -0.97530866, y: -1.9879518}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -204,12 +204,12 @@ TextureImporter:
       name: bg2_walls_4
       rect:
         serializedVersion: 2
-        x: 231
-        y: 726
+        x: 237
+        y: 752
         width: 583
-        height: 120
+        height: 94
       alignment: 9
-      pivot: {x: 1.2504288, y: -1.55}
+      pivot: {x: 1.2401372, y: -2.255319}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -227,11 +227,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 441
+        y: 451
         width: 253
-        height: 102
+        height: 92
       alignment: 9
-      pivot: {x: 3.7944665, y: 0.9705882}
+      pivot: {x: 3.7944665, y: 0.9673913}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -293,11 +293,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 478
-        y: 126
+        y: 134
         width: 969
-        height: 87
+        height: 79
       alignment: 9
-      pivot: {x: 0.49742, y: 4.7586207}
+      pivot: {x: 0.49742, y: 5.1392407}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -376,6 +376,116 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bg2_walls_12
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 367
+        width: 27
+        height: 82
+      alignment: 9
+      pivot: {x: 26.88889, y: 2.109756}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a04e71b09d373294d97046117d8ce83d
+      internalID: 588108621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg2_walls_13
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 673
+        width: 33
+        height: 78
+      alignment: 9
+      pivot: {x: 22.121212, y: -1.7051282}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52049d669d9bea4487f8c6ecd58b1de
+      internalID: -301266398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg2_walls_14
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 625
+        width: 24
+        height: 78
+      alignment: 9
+      pivot: {x: -19.125, y: -1.0897436}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c84df2a72184834e9f323ff8dc1ae91
+      internalID: 299640889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg2_walls_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 57
+        width: 24
+        height: 75
+      alignment: 9
+      pivot: {x: 9.5, y: 6.44}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809e25ac1848a77429bba335efe7b1ce
+      internalID: -1888530587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bg2_walls_16
+      rect:
+        serializedVersion: 2
+        x: 1115
+        y: 56
+        width: 25
+        height: 77
+      alignment: 9
+      pivot: {x: -6.2, y: 6.285714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb27abc13a3918942b59506e36729fb1
+      internalID: 619496473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -394,6 +504,11 @@ TextureImporter:
       bg2_walls_1: 1076570861
       bg2_walls_10: -1320420322
       bg2_walls_11: 2013386491
+      bg2_walls_12: 588108621
+      bg2_walls_13: -301266398
+      bg2_walls_14: 299640889
+      bg2_walls_15: -1888530587
+      bg2_walls_16: 619496473
       bg2_walls_2: 836549227
       bg2_walls_3: -429667359
       bg2_walls_4: 2084669700
