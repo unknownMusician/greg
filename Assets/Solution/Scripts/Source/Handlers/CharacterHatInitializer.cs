@@ -40,6 +40,9 @@ namespace Greg.Handlers
                 HatId = hatSettings.Id,
                 InventorySlots = inventorySlots
             };
+            
+            var hatRendererComponent = @event.GameObject.GetComponent<HatRendererComponent>();
+            hatRendererComponent.SpriteRenderer.sprite = hatSettings.Icon;
         }
     }
 }
