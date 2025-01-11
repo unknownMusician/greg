@@ -16,5 +16,6 @@ namespace Greg.Global.Holders
         [field: SerializeField] public List<Transform> SafemanSpawnPoints { get; private set; }
         [field: SerializeField] public GameObject GamePausedWindow { get; private set; }
         [field: SerializeField] public GameObject PauseButton { get; private set; }
+        [field: SerializeField] public GameObject MuteButton { get; private set; }
     }
 }

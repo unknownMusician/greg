@@ -20,6 +20,7 @@ namespace Greg.Global
             ResourcesLocator.Add(new InventoryViewCellsHolder());
 
             ResourcesLocator.Add(new IsGamePausedHolder());
+            ResourcesLocator.Add(new IsSoundMutedHolder());
         }
     }
 }
