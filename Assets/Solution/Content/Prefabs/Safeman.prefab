@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2043905848750134005}
   - component: {fileID: 7495485769368123969}
   m_Layer: 7
-  m_Name: BodyVisual
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -209,8 +209,9 @@ GameObject:
   - component: {fileID: 2547882258170291512}
   - component: {fileID: 2539551643373137315}
   - component: {fileID: 2262985054083753040}
-  - component: {fileID: 4562587661875695808}
   - component: {fileID: -929339425716286469}
+  - component: {fileID: 4562587661875695808}
+  - component: {fileID: 2969493659099409622}
   m_Layer: 7
   m_Name: Safeman
   m_TagString: Untagged
@@ -274,18 +275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54a99070dc0046b7a50d7c885cf27156, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4562587661875695808
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4022103872242590468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1961799d1ea433ab7939005fdb7cd61, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-929339425716286469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -300,6 +289,31 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Multiplier: 1
   Offset: -651
+--- !u!114 &4562587661875695808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022103872242590468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1961799d1ea433ab7939005fdb7cd61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2969493659099409622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022103872242590468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 721cb81253734d34b68dd99fe6f545a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <SpriteRenderer>k__BackingField: {fileID: 5393195022819072615}
 --- !u!1 &6433558333639158033
 GameObject:
   m_ObjectHideFlags: 0
@@ -311,7 +325,7 @@ GameObject:
   - component: {fileID: 906316249996508850}
   - component: {fileID: 5393195022819072615}
   m_Layer: 7
-  m_Name: HatVisual
+  m_Name: Hat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
