@@ -39,6 +39,10 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardStateVisualizer());
             
             eventBus.Subscribe(new InnocentInitializer());
+            
+            eventBus.Subscribe(new GamePauser());
+            eventBus.Subscribe(new GamePausedWindowEnabler());
+            eventBus.Subscribe(new PauseButtonUpdater());
         }
     }
 }
