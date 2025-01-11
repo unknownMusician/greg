@@ -18,7 +18,6 @@ namespace Greg.Global
             eventBus.Subscribe(new PlayerStealInputReader());
             
             eventBus.Subscribe(new PlayerMover());
-            eventBus.Subscribe(new PlayerRotator());
             eventBus.Subscribe(new PlayerStealer());
 
             eventBus.Subscribe(new InventoryChangeTracker());
