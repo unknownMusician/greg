@@ -327,8 +327,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <EnvironmentContainer>k__BackingField: {fileID: 1191130553}
-  <GuardsContainer>k__BackingField: {fileID: 0}
-  <Player>k__BackingField: {fileID: 0}
+  <Player>k__BackingField: {fileID: 1023798240}
   <InventoryCellsParent>k__BackingField: {fileID: 1396938781}
 --- !u!114 &750091592
 MonoBehaviour:
@@ -381,6 +380,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1023798240 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4740697378087300763, guid: a8ce9876ad74b6c428d1a237fe5fd3c1, type: 3}
+  m_PrefabInstance: {fileID: 349200609}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1191130553 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3054790141703961198, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
