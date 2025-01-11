@@ -27,19 +27,21 @@ namespace Solution.Scripts.Source.Handlers
                 }
 
                 var angle = Vector3.Angle(distanceVector, guard.GetComponent<GuardLookDirectionComponent>().Direction);
-                if (angle > builtDataHolder.GuardLookAngle)
+                if (angle > builtDataHolder.GuardLookAngle / 2)
                 {
                     continue;
                 }
 
-                var hit = Physics2D.Raycast(guard.transform.position, distanceVector);
-                if (hit.collider != null && hit.collider.gameObject.GetComponentInParent<PlayerComponent>())
+                var hit = Physics2D.Raycast(guard.transform.position, distanceVector, float.MaxValue, 6);
+                if (hit.collider != null)
                 {
-                    EventContext.Bus.Invoke(new GuardDetectedPlayerEvent
-                    {
-                        Guard = guard,
-                    });
+                    return;
                 }
+                
+                EventContext.Bus.Invoke(new GuardDetectedPlayerEvent
+                {
+                    Guard = guard,
+                });
             }
         }
     }
