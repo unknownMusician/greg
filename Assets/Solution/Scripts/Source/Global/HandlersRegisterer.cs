@@ -12,6 +12,9 @@ namespace Greg.Global
         {
             eventBus.Subscribe(new InitializeResources());
             
+            eventBus.Subscribe(new CharactersInitialSpawner());
+            eventBus.Subscribe(new PlayerObjectSetter());
+            
             eventBus.Subscribe(new NpcPathVisualizer());
             
             eventBus.Subscribe(new HeightDepthApplier());
@@ -34,6 +37,8 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardsDetectedPlayerNotifier());
             eventBus.Subscribe(new GuardsLookAreaVisualizer());
             eventBus.Subscribe(new GuardStateVisualizer());
+            
+            eventBus.Subscribe(new InnocentInitializer());
         }
     }
 }

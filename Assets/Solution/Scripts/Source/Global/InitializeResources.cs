@@ -12,6 +12,7 @@ namespace Greg.Global
         {
             ResourcesLocator.Add(new ComponentsResource());
             
+            ResourcesLocator.Add(new PlayerObjectHolder());
             ResourcesLocator.Add(new StealablesHolder());
             ResourcesLocator.Add(new NpcHolder());
             

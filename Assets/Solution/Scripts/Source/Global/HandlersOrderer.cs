@@ -19,9 +19,11 @@ namespace Greg.Global
         private static void OrderStart(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<StartEvent>();
-            
-            eventOrderer.Order<InitializePredefinedResources>().Before<StealablesHolderInitializer>();
-            eventOrderer.Order<InitializePredefinedResources>().Before<InventoryViewCreator>();
+
+            eventOrderer.Order<InitializePredefinedResources>().Before<InitializeResources>();
+            eventOrderer.Order<InitializeResources>().Before<CharactersInitialSpawner>();
+            eventOrderer.Order<InitializeResources>().Before<StealablesHolderInitializer>();
+            eventOrderer.Order<InitializeResources>().Before<InventoryViewCreator>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)

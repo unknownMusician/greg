@@ -27,5 +27,12 @@ namespace Greg.Global.Holders
         
         [Header("Innocents")]
         [field: SerializeField] public float PocketItemSpawnProbability { get; private set; }
+        
+        [Header("Prefabs")]
+        [field: SerializeField] public GameObject PlayerPrefab { get; private set; }
+
+        [field: SerializeField] public GameObject SafemanPrefab { get; private set; }
+        [field: SerializeField] public GameObject InnocentPrefab { get; private set; }
+        [field: SerializeField] public GameObject GuardPrefab { get; private set; }
     }
 }

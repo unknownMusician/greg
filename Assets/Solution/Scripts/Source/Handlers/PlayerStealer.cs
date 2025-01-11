@@ -13,7 +13,7 @@ namespace Greg.Handlers
         private static void Handle(
             PlayerStealInputEvent _,
             StealablesHolder stealablesHolder,
-            SceneDataHolder sceneDataHolder,
+            PlayerObjectHolder playerObjectHolder,
             BuiltDataHolder builtDataHolder,
             InventoryItemsHolder inventoryItemsHolder
             )
@@ -22,7 +22,7 @@ namespace Greg.Handlers
             GameObject closestStealable = null;
             foreach (var stealable in stealablesHolder.Stealables)
             {
-                var distance = (stealable.transform.position - sceneDataHolder.Player.transform.position).magnitude;
+                var distance = (stealable.transform.position - playerObjectHolder.GameObject.transform.position).magnitude;
 
                 if (distance <= builtDataHolder.StealDistance && distance < shortestDistance)
                 {
