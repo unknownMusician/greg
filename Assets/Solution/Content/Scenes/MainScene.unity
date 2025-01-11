@@ -191,6 +191,7 @@ MonoBehaviour:
   - {fileID: 2118455737}
   <GamePausedWindow>k__BackingField: {fileID: 1116128086}
   <PauseButton>k__BackingField: {fileID: 1116128084}
+  <MuteButton>k__BackingField: {fileID: 1932635604}
 --- !u!114 &750091592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,8 +252,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157938350877833803, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2577368976687387233, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_Pivot.x
@@ -333,6 +370,14 @@ PrefabInstance:
     - target: {fileID: 2577368976687387233, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337449975267538794, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337449975267538794, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7838458044628508898, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_Name
@@ -518,6 +563,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7686878380466837746, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
   m_PrefabInstance: {fileID: 5573962133792791579}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1932635604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1159731429241844534, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+  m_PrefabInstance: {fileID: 1116128083}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2118455737 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3621355729517135315, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
@@ -636,18 +686,6 @@ PrefabInstance:
     - target: {fileID: 3054790141703961198, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
       propertyPath: m_Name
       value: Environment
-      objectReference: {fileID: 0}
-    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_VoxelSize
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: a5438b4272c86a54dbbc566891f4daf6, type: 2}
-    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_OverrideVoxelSize
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
