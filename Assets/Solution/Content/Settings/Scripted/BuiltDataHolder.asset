@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d808f95ab043b9b3b72acc7b07ddba, type: 3}
   m_Name: BuiltDataHolder
   m_EditorClassIdentifier: 
-  <PlayerSpeed>k__BackingField: 5
+  <PlayerSpeed>k__BackingField: 250
   <StealDistance>k__BackingField: 1
   <InventoryCapacity>k__BackingField: 4
   <InventoryCellPrefab>k__BackingField: {fileID: 488343677632883471, guid: bab28dec84b431e46bd80303136dbb3e, type: 3}
