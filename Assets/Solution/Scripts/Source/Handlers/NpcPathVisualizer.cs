@@ -28,7 +28,7 @@ namespace Greg.Handlers
             {
                 var nextIndex = (i + 1) % path.Count;
                 
-                Gizmos.DrawSphere(path[i].Position.XYN(), 0.5f);
+                Gizmos.DrawSphere(path[i].Position.XYN(), 0.1f);
                 Gizmos.DrawLine(path[i].Position.XYN(), path[nextIndex].Position.XYN());
             }
 #endif

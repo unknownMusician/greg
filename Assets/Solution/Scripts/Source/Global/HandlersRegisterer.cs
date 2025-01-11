@@ -12,6 +12,8 @@ namespace Greg.Global
         {
             eventBus.Subscribe(new InitializeResources());
             
+            eventBus.Subscribe(new NpcPathVisualizer());
+            
             eventBus.Subscribe(new StealablesHolderInitializer());
             eventBus.Subscribe(new NpcWalker());
             

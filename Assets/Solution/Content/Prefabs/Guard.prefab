@@ -219,12 +219,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WalkPath:
-  - Position: {x: 0, y: 0}
+  - Position: {x: 0.27, y: 2.37}
     WaitDuration: 1
-  - Position: {x: 2, y: 0}
+  - Position: {x: 2.95, y: 2.43}
+    WaitDuration: 2
+  - Position: {x: 2.85, y: 1.05}
     WaitDuration: 2
   TargetIndex: 0
   WaitedTime: 0
+  Speed: 1.23
 --- !u!114 &4349690002658835795
 MonoBehaviour:
   m_ObjectHideFlags: 0
