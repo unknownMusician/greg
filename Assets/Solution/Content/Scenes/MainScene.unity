@@ -252,8 +252,44 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2157938350877833803, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2577368976687387233, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_Pivot.x
@@ -334,6 +370,14 @@ PrefabInstance:
     - target: {fileID: 2577368976687387233, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337449975267538794, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4337449975267538794, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7838458044628508898, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_Name
