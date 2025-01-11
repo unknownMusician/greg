@@ -8,7 +8,6 @@ namespace Greg.Global.Holders
     public sealed class SceneDataHolder : MonoBehaviour
     {
         [field: SerializeField] public GameObject EnvironmentContainer { get; private set; }
-        // [field: SerializeField] public GameObject Player { get; private set; }
         [field: SerializeField] public Transform InventoryCellsParent { get; private set; }
         [field: SerializeField] public Transform PlayerSpawnPoint { get; private set; }
         [field: SerializeField] public List<Transform> InnocentSpawnPoints { get; private set; }

@@ -9,7 +9,5 @@ namespace Greg.Components
         public List<WalkPoint> WalkPath;
         public int TargetIndex;
         public float WaitedTime;
-        // todo: to separate component
-        public float Speed;
     }
 }

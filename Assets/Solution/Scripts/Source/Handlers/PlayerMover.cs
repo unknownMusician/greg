@@ -1,6 +1,6 @@
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
-using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
 
@@ -12,10 +12,17 @@ namespace Greg.Handlers
         private static void Handle(
             PlayerMoveInputEvent @event,
             PlayerObjectHolder playerObjectHolder,
-            BuiltDataHolder builtDataHolder
+            ComponentsResource componentsResource
         )
         {
-            playerObjectHolder.GameObject.GetComponent<Rigidbody2D>().linearVelocity = @event.Direction * builtDataHolder.PlayerSpeed;
+            foreach (var gameObject in componentsResource.Get<PlayerComponent>())
+            {
+                var speed = gameObject.GetComponent<CharacterSpeedComponent>().Speed;
+
+                var rigidbody = playerObjectHolder.GameObject.GetComponent<Rigidbody2D>();
+                
+                rigidbody.linearVelocity = @event.Direction * speed;
+            }
         }
     }
 }

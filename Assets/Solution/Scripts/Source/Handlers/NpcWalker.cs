@@ -24,12 +24,13 @@ namespace Greg.Handlers
                 }
 
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
+                var speed = gameObject.GetComponent<CharacterSpeedComponent>().Speed;
 
                 var targetWalkPoint = walkingNpcComponent.WalkPath[walkingNpcComponent.TargetIndex];
 
                 if (!Mathf.Approximately((gameObject.transform.position.XY() - targetWalkPoint.Position).sqrMagnitude, 0))
                 {
-                    Walk(gameObject, targetWalkPoint.Position, walkingNpcComponent.Speed);
+                    Walk(gameObject, targetWalkPoint.Position, speed);
                     continue;
                 }
                 

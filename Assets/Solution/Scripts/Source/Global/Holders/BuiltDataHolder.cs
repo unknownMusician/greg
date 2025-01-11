@@ -9,8 +9,8 @@ namespace Greg.Global.Holders
     [CreateAssetMenu(menuName = "BuiltDataHolder", fileName = "BuiltDataHolder", order = 0)]
     public sealed class BuiltDataHolder : ScriptableObject
     {
-        [Header("Movement")]
-        [field: SerializeField] public float PlayerSpeed { get; private set; }
+        [Header("Layering")]
+        [field: SerializeField] public float HeightDepthMultiplier { get; private set; } = 1;
         
         [Header("Stealing")]
         [field: SerializeField] public float StealDistance { get; private set; }

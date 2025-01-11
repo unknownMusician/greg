@@ -567,6 +567,7 @@ GameObject:
   - component: {fileID: 8880123943491882137}
   - component: {fileID: 4000073592300883609}
   - component: {fileID: 1417315451358680379}
+  - component: {fileID: 2947326617246326270}
   m_Layer: 7
   m_Name: Guard
   m_TagString: Untagged
@@ -680,7 +681,6 @@ MonoBehaviour:
     WaitDuration: 2
   TargetIndex: 0
   WaitedTime: 0
-  Speed: 1.23
 --- !u!114 &4349690002658835795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,8 +745,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b904c3af7724e34bd1d5abd9df07b1f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Multiplier: 1
   Offset: -651
+--- !u!114 &2947326617246326270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009895020479102950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43ff09d26d594ad1ac83956d2ef92410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 300
 --- !u!1 &7208423929297067305
 GameObject:
   m_ObjectHideFlags: 0

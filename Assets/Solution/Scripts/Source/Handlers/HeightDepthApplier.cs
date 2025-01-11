@@ -1,6 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Components;
 using Greg.Events;
+using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
 
@@ -11,7 +12,8 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            ComponentsResource componentsResource
+            ComponentsResource componentsResource,
+            BuiltDataHolder builtDataHolder
         )
         {
             foreach (var gameObject in componentsResource.Get<HeightDepthComponent>())
@@ -20,7 +22,7 @@ namespace Greg.Handlers
 
                 var position = gameObject.transform.position;
 
-                position.z = position.y * heightDepth.Multiplier + heightDepth.Offset;
+                position.z = position.y * builtDataHolder.HeightDepthMultiplier + heightDepth.Offset;
 
                 gameObject.transform.position = position;
             }
