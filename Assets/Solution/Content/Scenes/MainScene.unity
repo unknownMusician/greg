@@ -594,6 +594,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 324926468757089408, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_Size.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -7391797651115174431, guid: 21495b862a4572847816b07ca22e3c25, type: 3}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_DrawMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_SpriteTileMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3079518336484956967, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3124040192601040400, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4687549511133184717, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -637,6 +669,10 @@ PrefabInstance:
     - target: {fileID: 6009895020479102950, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
       propertyPath: m_Name
       value: Guard
+      objectReference: {fileID: 0}
+    - target: {fileID: 8445122857216083310, guid: b07a5a81d0ea7ed40bc6b2155612ff6d, type: 3}
+      propertyPath: m_Color.a
+      value: 0.5019608
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

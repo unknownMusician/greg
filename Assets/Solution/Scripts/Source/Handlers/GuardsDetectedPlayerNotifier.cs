@@ -1,5 +1,6 @@
 using AreYouFruits.Events;
 using Greg.Components;
+using Greg.Data;
 using Greg.Events;
 
 namespace Greg.Handlers
@@ -11,7 +12,7 @@ namespace Greg.Handlers
             GuardDetectedPlayerEvent @event
             )
         {
-            @event.Guard.GetComponent<GuardNotifyComponent>().ExclamationMark.gameObject.SetActive(true);
+            @event.Guard.GetComponent<GuardStateComponent>().State = GuardStateType.Aggressive;
         }
     }
 }
