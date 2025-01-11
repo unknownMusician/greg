@@ -336,7 +336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <EnvironmentContainer>k__BackingField: {fileID: 1191130553}
-  <Player>k__BackingField: {fileID: 0}
   <InventoryCellsParent>k__BackingField: {fileID: 1396938781}
   <PlayerSpawnPoint>k__BackingField: {fileID: 270487071}
   <InnocentSpawnPoints>k__BackingField:
@@ -698,30 +697,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2246329701669484033, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: orthographic size
-      value: 4.63
-      objectReference: {fileID: 0}
-    - target: {fileID: 2246329701669484033, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_BackGroundColor.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2246329701669484033, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_BackGroundColor.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2246329701669484033, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_BackGroundColor.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358247388626673355, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2358247388626673355, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2950944268039943336, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -766,10 +741,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Environment
       objectReference: {fileID: 0}
-    - target: {fileID: 8657188423036462166, guid: fb88e6a2f81f18a458509e115664c83b, type: 3}
-      propertyPath: m_NavMeshData
-      value: 
-      objectReference: {fileID: 23800000, guid: a5438b4272c86a54dbbc566891f4daf6, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
