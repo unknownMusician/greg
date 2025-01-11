@@ -292,12 +292,12 @@ TextureImporter:
       name: bg2_walls_8
       rect:
         serializedVersion: 2
-        x: 471
+        x: 478
         y: 126
-        width: 976
-        height: 97
+        width: 969
+        height: 87
       alignment: 9
-      pivot: {x: 0.5010246, y: 4.268041}
+      pivot: {x: 0.49742, y: 4.7586207}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
