@@ -17,7 +17,6 @@ namespace Greg.Global.Holders
         
         [Header("Inventory")]
         [field: SerializeField] public int InventoryCapacity { get; private set; }
-        [field: SerializeField] public GameObject InventoryCellPrefab { get; private set; }
         [field: SerializeField] public List<ItemSettings> ItemSettings { get; private set; }
         [field: SerializeField] public List<HatSettings> HatSettings { get; private set; }
         

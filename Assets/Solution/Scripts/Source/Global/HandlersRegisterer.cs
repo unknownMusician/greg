@@ -29,8 +29,7 @@ namespace Greg.Global
             eventBus.Subscribe(new PlayerStealer());
 
             eventBus.Subscribe(new InventoryChangeTracker());
-            eventBus.Subscribe(new InventoryViewCreator());
-            eventBus.Subscribe(new InventoryViewCreator());
+            eventBus.Subscribe(new InventoryViewUpdater());
             
             eventBus.Subscribe(new GuardsLookDirectionUpdater());
             eventBus.Subscribe(new GuardsLook());

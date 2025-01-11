@@ -13,14 +13,15 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             InventoryChangedEvent _,
-            InventoryViewCellsHolder inventoryViewCellsHolder,
+            ComponentsResource componentsResource,
             InventoryItemsHolder inventoryItemsHolder,
             BuiltDataHolder builtDataHolder
             )
         {
-            for (var i = 0; i < inventoryViewCellsHolder.InventoryCells.Count; i++)
+            var inventoryCellComponents = componentsResource.Get<InventoryCellComponent>().ToList();
+            for (var i = 0; i < inventoryCellComponents.Count; i++)
             {
-                var inventoryCell = inventoryViewCellsHolder.InventoryCells[i].GetComponent<InventoryCellComponent>();
+                var inventoryCell = inventoryCellComponents[i].GetComponent<InventoryCellComponent>();
 
                 if (i >= inventoryItemsHolder.Items.Count)
                 {
