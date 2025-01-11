@@ -19,5 +19,9 @@ namespace Greg.Global.Holders
         [field: SerializeField] public int InventoryCapacity { get; private set; }
         [field: SerializeField] public GameObject InventoryCellPrefab { get; private set; }
         [field: SerializeField] public List<ItemSettings> ItemSettings { get; private set; }
+        
+        [Header("Guards")]
+        [field: SerializeField] public float GuardLookDistance { get; private set; }
+        [field: SerializeField] public float GuardLookAngle { get; private set; }
     }
 }

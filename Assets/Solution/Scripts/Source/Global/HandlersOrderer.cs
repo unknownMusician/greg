@@ -21,12 +21,15 @@ namespace Greg.Global
             var eventOrderer = orderer.ForEvent<StartEvent>();
             
             eventOrderer.Order<InitializePredefinedResources>().Before<StealablesHolderInitializer>();
+            eventOrderer.Order<InitializePredefinedResources>().Before<GuardsHolderInitializer>();
             eventOrderer.Order<InitializePredefinedResources>().Before<InventoryViewCreator>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<UpdateEvent>();
+            
+            eventOrderer.Order<GuardsLookDirectionUpdater>().Before<GuardsLook>();
         }
     }
 }

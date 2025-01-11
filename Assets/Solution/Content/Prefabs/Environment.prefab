@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7039641668797306426
 Transform:
   m_ObjectHideFlags: 0
@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 2639144251989806690}
   - component: {fileID: 9104953546816133698}
   - component: {fileID: 1878422804340350056}
+  - component: {fileID: 5396258044487537546}
   m_Layer: 0
   m_Name: Stealable (2)
   m_TagString: Untagged
@@ -133,6 +134,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94216d9b5c33483aa5dd77efda786f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5396258044487537546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 181203057728163126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3961451d50d3429aa2f5761ba1e38421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 0
 --- !u!1 &3054790141703961198
 GameObject:
   m_ObjectHideFlags: 0
@@ -313,6 +327,7 @@ GameObject:
   - component: {fileID: 4891434987677318577}
   - component: {fileID: 7750688695214611867}
   - component: {fileID: 7438370492853657134}
+  - component: {fileID: 4044050412938531641}
   m_Layer: 0
   m_Name: Stealable (1)
   m_TagString: Untagged
@@ -402,6 +417,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94216d9b5c33483aa5dd77efda786f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4044050412938531641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5073304700299932532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3961451d50d3429aa2f5761ba1e38421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 0
 --- !u!1 &5799454612126153123
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +712,7 @@ GameObject:
   - component: {fileID: 8524270997132233643}
   - component: {fileID: 1018841537325292995}
   - component: {fileID: 9092184783376652190}
+  - component: {fileID: 2092318603467983716}
   m_Layer: 0
   m_Name: Stealable
   m_TagString: Untagged
@@ -773,6 +802,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94216d9b5c33483aa5dd77efda786f8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2092318603467983716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6900645348515998447}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3961451d50d3429aa2f5761ba1e38421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: 0
 --- !u!1 &7063889622271621768
 GameObject:
   m_ObjectHideFlags: 0
@@ -821,7 +863,7 @@ MonoBehaviour:
   m_LightType: 4
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
   m_Intensity: 1
   m_LightVolumeIntensity: 1
   m_LightVolumeEnabled: 0
@@ -872,7 +914,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &278459008069828162
 Transform:
   m_ObjectHideFlags: 0

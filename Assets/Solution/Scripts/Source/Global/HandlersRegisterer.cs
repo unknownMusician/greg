@@ -13,6 +13,7 @@ namespace Greg.Global
             eventBus.Subscribe(new InitializeResources());
             
             eventBus.Subscribe(new StealablesHolderInitializer());
+            eventBus.Subscribe(new GuardsHolderInitializer());
             
             eventBus.Subscribe(new PlayerMoveInputReader());
             eventBus.Subscribe(new PlayerStealInputReader());
@@ -23,6 +24,11 @@ namespace Greg.Global
             eventBus.Subscribe(new InventoryChangeTracker());
             eventBus.Subscribe(new InventoryViewCreator());
             eventBus.Subscribe(new InventoryViewUpdater());
+            
+            eventBus.Subscribe(new GuardsLookDirectionUpdater());
+            eventBus.Subscribe(new GuardsLook());
+            eventBus.Subscribe(new GuardsDetectedPlayerNotifier());
+            eventBus.Subscribe(new GuardsLookAreaVisualizer());
         }
     }
 }

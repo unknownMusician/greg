@@ -19,3 +19,5 @@ MonoBehaviour:
   <ItemSettings>k__BackingField:
   - <Id>k__BackingField: 0
     <Icon>k__BackingField: {fileID: -7391797651115174431, guid: 21495b862a4572847816b07ca22e3c25, type: 3}
+  <GuardLookDistance>k__BackingField: 2
+  <GuardLookAngle>k__BackingField: 45
