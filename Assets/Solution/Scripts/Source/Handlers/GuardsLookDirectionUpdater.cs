@@ -1,20 +1,20 @@
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
-using Solution.Scripts.Source.Components;
-using Solution.Scripts.Source.Holders;
+using Greg.Holders;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class GuardsLookDirectionUpdater
     {
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            GuardsHolder guardsHolder
+            ComponentsResource componentsResource
         )
         {
-            foreach (var guard in guardsHolder.Guards)
+            foreach (var guard in componentsResource.Get<GuardComponent>())
             {
                 // var direction = guard.GetComponent<Rigidbody2D>().linearVelocity.normalized;
                 var direction = Vector3.left;

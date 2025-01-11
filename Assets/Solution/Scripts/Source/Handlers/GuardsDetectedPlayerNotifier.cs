@@ -1,8 +1,8 @@
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
-using Solution.Scripts.Source.Components;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class GuardsDetectedPlayerNotifier
     {

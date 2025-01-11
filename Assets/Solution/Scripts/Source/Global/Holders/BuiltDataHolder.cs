@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using AreYouFruits.Events;
-using Solution.Scripts.Source.Data;
+using Greg.Data;
 using UnityEngine;
 
 namespace Greg.Global.Holders

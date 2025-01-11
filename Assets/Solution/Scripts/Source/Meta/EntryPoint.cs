@@ -9,6 +9,7 @@ using UnityEngine;
 namespace Greg.Meta
 {
     [ScriptTag(ArchitectureTag.Global)]
+    [DefaultExecutionOrder(-9999)]
     public sealed class EntryPoint : MonoBehaviour
     {
         private void Awake()

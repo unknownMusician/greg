@@ -2,7 +2,7 @@ using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Global.Handlers;
 using Greg.Utils.TagSearcher;
-using Solution.Scripts.Source.Handlers;
+using Greg.Handlers;
 using UnityEngine;
 
 namespace Greg.Global
@@ -21,7 +21,6 @@ namespace Greg.Global
             var eventOrderer = orderer.ForEvent<StartEvent>();
             
             eventOrderer.Order<InitializePredefinedResources>().Before<StealablesHolderInitializer>();
-            eventOrderer.Order<InitializePredefinedResources>().Before<GuardsHolderInitializer>();
             eventOrderer.Order<InitializePredefinedResources>().Before<InventoryViewCreator>();
         }
 

@@ -1,21 +1,21 @@
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
 using Greg.Global.Holders;
-using Solution.Scripts.Source.Components;
-using Solution.Scripts.Source.Holders;
+using Greg.Holders;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class GuardsLookAreaVisualizer
     {
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            GuardsHolder guardsHolder,
-            BuiltDataHolder builtDataHolder
-            )
+            BuiltDataHolder builtDataHolder,
+            ComponentsResource componentsResource
+        )
         {
-            foreach (var guard in guardsHolder.Guards)
+            foreach (var guard in componentsResource.Get<GuardComponent>())
             {
                 var direction = guard.GetComponent<GuardLookDirectionComponent>().Direction;
                 var lookArea = guard.GetComponent<GuardLookAreaComponent>().LookArea;

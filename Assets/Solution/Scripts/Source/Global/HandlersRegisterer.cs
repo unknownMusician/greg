@@ -1,6 +1,6 @@
 ﻿using AreYouFruits.Events;
 using Greg.Utils.TagSearcher;
-using Solution.Scripts.Source.Handlers;
+using Greg.Handlers;
 using UnityEngine;
 
 namespace Greg.Global
@@ -13,7 +13,7 @@ namespace Greg.Global
             eventBus.Subscribe(new InitializeResources());
             
             eventBus.Subscribe(new StealablesHolderInitializer());
-            eventBus.Subscribe(new GuardsHolderInitializer());
+            eventBus.Subscribe(new NpcWalker());
             
             eventBus.Subscribe(new PlayerMoveInputReader());
             eventBus.Subscribe(new PlayerStealInputReader());

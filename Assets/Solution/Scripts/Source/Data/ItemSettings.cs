@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Data
+namespace Greg.Data
 {
     [Serializable]
     public class ItemSettings

@@ -1,10 +1,10 @@
 using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Global.Holders;
-using Solution.Scripts.Source.Holders;
+using Greg.Holders;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class InventoryViewCreator
     {

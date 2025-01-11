@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Components
+namespace Greg.Components
 {
     public sealed class GuardNotifyComponent : MonoBehaviour
     {

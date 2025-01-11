@@ -1,7 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Utils.TagSearcher;
-using Solution.Scripts.Source.Holders;
+using Greg.Holders;
 
 namespace Greg.Global
 {
@@ -10,8 +10,10 @@ namespace Greg.Global
     {
         public void Handle(StartEvent @event)
         {
+            ResourcesLocator.Add(new ComponentsResource());
+            
             ResourcesLocator.Add(new StealablesHolder());
-            ResourcesLocator.Add(new GuardsHolder());
+            ResourcesLocator.Add(new NpcHolder());
             
             ResourcesLocator.Add(new InventoryItemsHolder());
             ResourcesLocator.Add(new InventoryViewCellsHolder());

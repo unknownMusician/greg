@@ -1,24 +1,24 @@
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
 using Greg.Global.Api;
 using Greg.Global.Holders;
-using Solution.Scripts.Source.Components;
-using Solution.Scripts.Source.Holders;
+using Greg.Holders;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class GuardsLook
     {
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            GuardsHolder guardsHolder,
             SceneDataHolder sceneDataHolder,
-            BuiltDataHolder builtDataHolder
+            BuiltDataHolder builtDataHolder,
+            ComponentsResource componentsResource
             )
         {
-            foreach (var guard in guardsHolder.Guards)
+            foreach (var guard in componentsResource.Get<GuardComponent>())
             {
                 var distanceVector = sceneDataHolder.Player.transform.position - guard.transform.position;
                 if (distanceVector.magnitude > builtDataHolder.GuardLookDistance)

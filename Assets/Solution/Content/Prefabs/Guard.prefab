@@ -101,6 +101,8 @@ GameObject:
   - component: {fileID: 6858456382272266097}
   - component: {fileID: 3098533888695819824}
   - component: {fileID: 2176542931260294179}
+  - component: {fileID: 4934189191453184018}
+  - component: {fileID: 4349690002658835795}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Untagged
@@ -204,6 +206,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <LookArea>k__BackingField: {fileID: 456582701890718330}
+--- !u!114 &4934189191453184018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009895020479102950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5cbc86d2e648e8982f3978b1bd959d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WalkPath:
+  - Position: {x: 0, y: 0}
+    WaitDuration: 1
+  - Position: {x: 2, y: 0}
+    WaitDuration: 2
+  TargetIndex: 0
+  WaitedTime: 0
+--- !u!114 &4349690002658835795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6009895020479102950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a99070dc0046b7a50d7c885cf27156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7208423929297067305
 GameObject:
   m_ObjectHideFlags: 0

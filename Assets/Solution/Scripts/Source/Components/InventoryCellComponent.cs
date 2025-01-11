@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Solution.Scripts.Source.Components
+namespace Greg.Components
 {
     public sealed class InventoryCellComponent : MonoBehaviour
     {

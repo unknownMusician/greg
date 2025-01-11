@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-namespace Solution.Scripts.Source.Components
+namespace Greg.Components
 {
     public sealed class GuardLookAreaComponent : MonoBehaviour
     {

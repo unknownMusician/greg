@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Holders
+namespace Greg.Holders
 {
     public sealed class InventoryViewCellsHolder
     {

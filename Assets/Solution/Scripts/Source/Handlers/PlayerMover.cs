@@ -3,7 +3,7 @@ using Greg.Events;
 using Greg.Global.Holders;
 using UnityEngine;
 
-namespace Solution.Scripts.Source.Handlers
+namespace Greg.Handlers
 {
     public sealed partial class PlayerMover
     {
