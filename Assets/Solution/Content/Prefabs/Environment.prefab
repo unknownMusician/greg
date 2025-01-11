@@ -208,12 +208,12 @@ MonoBehaviour:
   m_IgnoreNavMeshObstacle: 1
   m_OverrideTileSize: 0
   m_TileSize: 256
-  m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.016666668
+  m_OverrideVoxelSize: 1
+  m_VoxelSize: 3
   m_BuildHeightMesh: 0
   m_MinRegionArea: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 23800000, guid: a5438b4272c86a54dbbc566891f4daf6, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: dbc898116b40758498211dc7774e113b, type: 2}
 --- !u!114 &3116940749144302819
 MonoBehaviour:
   m_ObjectHideFlags: 0
