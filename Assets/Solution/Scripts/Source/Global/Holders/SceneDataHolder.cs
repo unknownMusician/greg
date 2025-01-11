@@ -9,5 +9,7 @@ namespace Greg.Global.Holders
         [field: SerializeField] public GameObject EnvironmentContainer { get; private set; }
         [field: SerializeField] public GameObject Player { get; private set; }
         [field: SerializeField] public Transform InventoryCellsParent { get; private set; }
+        [field: SerializeField] public GameObject GamePausedWindow { get; private set; }
+        [field: SerializeField] public GameObject PauseButton { get; private set; }
     }
 }

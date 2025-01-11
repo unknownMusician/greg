@@ -17,6 +17,8 @@ namespace Greg.Global
             
             ResourcesLocator.Add(new InventoryItemsHolder());
             ResourcesLocator.Add(new InventoryViewCellsHolder());
+
+            ResourcesLocator.Add(new IsGamePausedHolder());
         }
     }
 }
