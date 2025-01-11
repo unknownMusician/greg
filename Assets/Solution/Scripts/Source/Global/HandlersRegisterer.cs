@@ -30,6 +30,12 @@ namespace Greg.Global
 
             eventBus.Subscribe(new InventoryChangeTracker());
             eventBus.Subscribe(new InventoryViewUpdater());
+            eventBus.Subscribe(new InventoryPriceTextUpdater());
+            eventBus.Subscribe(new GamePauser());
+            eventBus.Subscribe(new GamePausedWindowEnabler());
+            eventBus.Subscribe(new PauseButtonUpdater());
+            eventBus.Subscribe(new SoundMuter());
+            eventBus.Subscribe(new MuteButtonUpdater());
             
             eventBus.Subscribe(new GuardsLookDirectionUpdater());
             eventBus.Subscribe(new GuardsLook());
@@ -38,12 +44,6 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardStateVisualizer());
             
             eventBus.Subscribe(new InnocentInitializer());
-            
-            eventBus.Subscribe(new GamePauser());
-            eventBus.Subscribe(new GamePausedWindowEnabler());
-            eventBus.Subscribe(new PauseButtonUpdater());
-            eventBus.Subscribe(new SoundMuter());
-            eventBus.Subscribe(new MuteButtonUpdater());
         }
     }
 }
