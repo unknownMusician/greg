@@ -17,8 +17,12 @@ namespace Greg.Handlers
             foreach (var gameObject in componentsResource.Get<HeightDepthComponent>())
             {
                 var heightDepth = gameObject.GetComponent<HeightDepthComponent>();
-                
-                heightDepth.
+
+                var position = gameObject.transform.position;
+
+                position.z = position.y * heightDepth.Multiplier + heightDepth.Offset;
+
+                gameObject.transform.position = position;
             }
         }
     }
