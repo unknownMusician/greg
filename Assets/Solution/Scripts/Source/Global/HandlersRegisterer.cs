@@ -14,6 +14,8 @@ namespace Greg.Global
             
             eventBus.Subscribe(new NpcPathVisualizer());
             
+            eventBus.Subscribe(new HeightDepthApplier());
+            
             eventBus.Subscribe(new StealablesHolderInitializer());
             eventBus.Subscribe(new NpcWalker());
             
@@ -25,7 +27,7 @@ namespace Greg.Global
 
             eventBus.Subscribe(new InventoryChangeTracker());
             eventBus.Subscribe(new InventoryViewCreator());
-            eventBus.Subscribe(new InventoryViewUpdater());
+            eventBus.Subscribe(new InventoryViewCreator());
             
             eventBus.Subscribe(new GuardsLookDirectionUpdater());
             eventBus.Subscribe(new GuardsLook());

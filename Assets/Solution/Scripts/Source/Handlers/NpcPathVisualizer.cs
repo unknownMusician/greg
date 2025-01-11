@@ -15,7 +15,14 @@ namespace Greg.Handlers
         {
 #if UNITY_EDITOR
 
-            if (!UnityEditor.Selection.activeGameObject.TryGetComponent(out WalkingNpcComponent walkingNpcComponent))
+            var activeGameObject = UnityEditor.Selection.activeGameObject;
+
+            if (activeGameObject == null)
+            {
+                return;
+            }
+
+            if (!activeGameObject.TryGetComponent(out WalkingNpcComponent walkingNpcComponent))
             {
                 return;
             }
