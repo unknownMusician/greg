@@ -37,8 +37,6 @@ namespace Greg.Handlers
             {
                 pocketComponent.StoredItemId = Optional.None<uint>();
             }
-            
-            Debug.Log($"[InnocentsPocketInitializer] {@event.GameObject.name}={pocketComponent.StoredItemId.ToString()}");
         }
     }
 }
