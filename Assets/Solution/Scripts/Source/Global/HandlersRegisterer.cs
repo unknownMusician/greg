@@ -43,6 +43,8 @@ namespace Greg.Global
             eventBus.Subscribe(new GamePauser());
             eventBus.Subscribe(new GamePausedWindowEnabler());
             eventBus.Subscribe(new PauseButtonUpdater());
+            eventBus.Subscribe(new SoundMuter());
+            eventBus.Subscribe(new MuteButtonUpdater());
         }
     }
 }

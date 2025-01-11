@@ -21,4 +21,18 @@ namespace Greg.Handlers
                 : "PAUSE";
         }
     }
+    
+    public sealed partial class MuteButtonUpdater
+    {
+        [EventHandler]
+        private static void Handle(
+            IsSoundMutedChangedEvent _,
+            SceneDataHolder sceneDataHolder,
+            IsSoundMutedHolder isSoundMutedHolder
+        )
+        {
+            sceneDataHolder.MuteButton.GetComponent<MuteButtonView>().SoundOnImage.SetActive(!isSoundMutedHolder.IsSoundMuted);
+            sceneDataHolder.MuteButton.GetComponent<MuteButtonView>().SoundOffImage.SetActive(isSoundMutedHolder.IsSoundMuted);
+        }
+    }
 }
