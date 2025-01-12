@@ -79,7 +79,7 @@ MonoBehaviour:
     <MaxSlotsAmount>k__BackingField: 4
   <GuardLookDistance>k__BackingField: 200
   <GuardLookAngle>k__BackingField: 44.8
-  <CatchDistance>k__BackingField: 5
+  <CatchDistance>k__BackingField: 8.5
   <PocketItemSpawnProbability>k__BackingField: 1
   <HeadSprites>k__BackingField:
   - {fileID: 2438809089424711796, guid: 27d9e1c805dd1f3469c43219611d5d3b, type: 3}

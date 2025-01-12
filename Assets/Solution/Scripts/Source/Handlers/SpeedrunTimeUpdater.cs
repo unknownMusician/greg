@@ -7,7 +7,31 @@ using UnityEngine;
 
 namespace Greg.Handlers
 {
+    public sealed partial class SpeedrunTimeResetter
+    {
+        [EventHandler]
+        private static void Handle(
+            StartEvent _,
+            StartRealTimeHolder startRealTimeHolder
+        )
+        {
+            startRealTimeHolder.Time = 0;
+        }
+    }
+    
     public sealed partial class SpeedrunTimeUpdater
+    {
+        [EventHandler]
+        private static void Handle(
+            UpdateEvent _,
+            StartRealTimeHolder startRealTimeHolder
+        )
+        {
+            startRealTimeHolder.Time += Time.deltaTime;
+        }
+    }
+    
+    public sealed partial class SpeedrunTimeViewUpdater
     {
         [EventHandler]
         private static void Handle(
@@ -22,8 +46,6 @@ namespace Greg.Handlers
                 return;
             }
             
-            // todo: start time at the real scene start
-            // todo: show timer in the end screen
             var timer = startRealTimeHolder.GetTimer();
             
             foreach (var gameObject in componentsResource.Get<SpeedrunTimeComponent>())

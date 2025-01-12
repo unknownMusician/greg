@@ -129,6 +129,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6558073263556928784, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
   m_PrefabInstance: {fileID: 5573962133792791579}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &215959592 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4356159468047830272, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+  m_PrefabInstance: {fileID: 1116128083}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &270487071 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4661512486024778882, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
@@ -251,7 +262,7 @@ MonoBehaviour:
   <CollectedMoneyTextComponent>k__BackingField: {fileID: 1116128088}
   <LevelMoneyTextComponent>k__BackingField: {fileID: 1116128087}
   <InventoryMoneyTextComponent>k__BackingField: {fileID: 1116128085}
-  <ResultMoneyText>k__BackingField: {fileID: 2071148120}
+  <ResultMoneyText>k__BackingField: {fileID: 215959592}
   <ResultTimeText>k__BackingField: {fileID: 2062252326}
 --- !u!114 &750091592
 MonoBehaviour:
@@ -722,17 +733,6 @@ Transform:
 --- !u!114 &2062252326 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4192442168001472578, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
-  m_PrefabInstance: {fileID: 1116128083}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2071148120 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8020738174636697789, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
   m_PrefabInstance: {fileID: 1116128083}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
