@@ -24,5 +24,7 @@ namespace Greg.Global.Holders
         [field: SerializeField] public CollectedMoneyTextComponent CollectedMoneyTextComponent { get; private set; }
         [field: SerializeField] public LevelMoneyTextComponent LevelMoneyTextComponent { get; private set; }
         [field: SerializeField] public InventoryMoneyTextComponent InventoryMoneyTextComponent { get; private set; }
+        [field: SerializeField] public TextMeshProUGUI ResultMoneyText { get; private set; }
+        [field: SerializeField] public TextMeshProUGUI ResultTimeText { get; private set; }
     }
 }
