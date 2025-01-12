@@ -72,6 +72,8 @@ namespace Greg.Global
             eventBus.Subscribe(new GameEnder());
             eventBus.Subscribe(new GameRestarter());
             eventBus.Subscribe(new DoorExit());
+            eventBus.Subscribe(new ArtifactsInitializer());
+            eventBus.Subscribe(new ArtifactInteractionStateChangeHandler());
         }
     }
 }
