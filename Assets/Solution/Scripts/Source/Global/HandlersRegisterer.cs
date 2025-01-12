@@ -15,8 +15,6 @@ namespace Greg.Global
             eventBus.Subscribe(new CharactersInitialSpawner());
             eventBus.Subscribe(new PlayerObjectSetter());
             
-            eventBus.Subscribe(new NpcPathVisualizer());
-            
             eventBus.Subscribe(new HeightDepthApplier());
             
             eventBus.Subscribe(new StealablesHolderInitializer());

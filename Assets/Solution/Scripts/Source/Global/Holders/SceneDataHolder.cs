@@ -27,5 +27,6 @@ namespace Greg.Global.Holders
         [field: SerializeField] public InventoryMoneyTextComponent InventoryMoneyTextComponent { get; private set; }
         [field: SerializeField] public TextMeshProUGUI ResultMoneyText { get; private set; }
         [field: SerializeField] public TextMeshProUGUI ResultTimeText { get; private set; }
+        [field: SerializeField] public Transform WalkPointsParent { get; private set; }
     }
 }
