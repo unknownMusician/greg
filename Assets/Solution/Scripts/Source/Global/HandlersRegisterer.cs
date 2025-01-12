@@ -38,6 +38,7 @@ namespace Greg.Global
             eventBus.Subscribe(new SpeedrunTimeUpdater());
             eventBus.Subscribe(new PauseButtonUpdater());
             eventBus.Subscribe(new SoundMuter());
+            eventBus.Subscribe(new SoundListenerMuter());
             eventBus.Subscribe(new MuteButtonUpdater());
             
             eventBus.Subscribe(new GuardsLookDirectionUpdater());

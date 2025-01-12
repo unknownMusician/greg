@@ -14,6 +14,8 @@ namespace Greg.Meta
     {
         private void Awake()
         {
+            ResourcesLocator.Clear();
+            
             var globalOrderer = new GroupGraphOrderer();
 
             foreach (var orderer in gameObject.GetComponentsInChildren<IHandlerOrderer>())
