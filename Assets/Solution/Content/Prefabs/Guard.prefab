@@ -489,15 +489,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a5cbc86d2e648e8982f3978b1bd959d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  WalkPath:
-  - Position: {x: 0.27, y: 2.37}
-    WaitDuration: 1
-  - Position: {x: 2.95, y: 2.43}
-    WaitDuration: 2
-  - Position: {x: 2.85, y: 1.05}
-    WaitDuration: 2
-  TargetIndex: 0
   WaitedTime: 0
+  NeededTime: 0
 --- !u!114 &4349690002658835795
 MonoBehaviour:
   m_ObjectHideFlags: 0
