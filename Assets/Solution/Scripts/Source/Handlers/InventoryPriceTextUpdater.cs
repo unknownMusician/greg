@@ -18,7 +18,7 @@ namespace Greg.Handlers
         {
             var sum = inventoryItemsHolder.Items
                 .Sum(itemId => builtDataHolder.ItemSettings.First(s => s.Id == itemId).Price);
-            sceneDataHolder.InventoryPriceText.text = $"${sum}";
+            sceneDataHolder.InventoryPriceText.text = $"{sum}";
         }
     }
 }
