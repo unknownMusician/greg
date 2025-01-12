@@ -21,18 +21,18 @@ namespace Greg.Handlers
             {
                 var speed = gameObject.GetComponent<CharacterSpeedComponent>().Speed;
 
-                if (gameObject.TryGetComponent(out GuardStateComponent guardStateComponent) && guardStateComponent.State == GuardStateType.Aggressive)
+                if (gameObject.TryGetComponent(out GuardStateComponent guardStateComponent))
                 {
-                    Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed);
+                    if (guardStateComponent.State == GuardStateType.Aggressive)
+                    {
+                        Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed);
+                    }
+                    
                     continue;
                 }
-
-                if (guardStateComponent.State == GuardStateType.Investigative)
-                {
-                    // TODO : Implement investigation logic
-                    continue;
-                }
-
+                
+                continue;
+                
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
 
                 var targetWalkPoint = walkingNpcComponent.WalkPath[walkingNpcComponent.TargetIndex];

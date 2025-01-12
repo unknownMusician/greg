@@ -42,6 +42,8 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardsLook());
             eventBus.Subscribe(new GuardsDetectedPlayerNotifier());
             eventBus.Subscribe(new GuardStateVisualizer());
+            eventBus.Subscribe(new GuardLookAreaVisualizer());
+            eventBus.Subscribe(new GuardsPlayerLostHandler());
             
             eventBus.Subscribe(new InnocentInitializer());
             eventBus.Subscribe(new CharacterHatInitializer());
