@@ -14,12 +14,17 @@ namespace Greg.Handlers
     {
         [EventHandler]
         private static void Handle(
-            PlayerStealEvent _,
+            UpdateEvent _,
             PlayerObjectHolder playerObjectHolder,
             BuiltDataHolder builtDataHolder,
             ComponentsResource componentsResource
             )
         {
+            if (!IsIllegal())
+            {
+                return;
+            }
+
             foreach (var guard in componentsResource.Get<GuardComponent>())
             {
                 var distanceVector = playerObjectHolder.GameObject.transform.position.XY() - guard.transform.position.XY();
@@ -48,6 +53,11 @@ namespace Greg.Handlers
                     Guard = guard,
                 });
             }
+        }
+
+        private static bool IsIllegal()
+        {
+            return Input.GetKey(KeyCode.F) || !Input.GetKey(KeyCode.E);
         }
     }
 }
