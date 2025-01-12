@@ -22,6 +22,7 @@ namespace Greg.Global
             var eventOrderer = orderer.ForEvent<StartEvent>();
 
             eventOrderer.Order<InitializePredefinedResources>().Before<InitializeResources>();
+            eventOrderer.Order<InitializePredefinedResources>().Before<CharactersInitialSpawner>();
             eventOrderer.Order<InitializeResources>().Before<CharactersInitialSpawner>();
             eventOrderer.Order<InitializeResources>().Before<StealablesHolderInitializer>();
             eventOrderer.Order<InitializeResources>().Before<PathFindingGridInitializer>();
