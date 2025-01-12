@@ -6,7 +6,7 @@ namespace Greg.Utils
 {
     public static class PathFinderUtils
     {
-        public static Vector2 GetDirection(PathFinderHolder pathFinderHolder, Vector2 start, Vector2 target)
+        public static Vector2 GetTarget(PathFinderHolder pathFinderHolder, Vector2 start, Vector2 target)
         {
             var startRoomId = (int?)null;
             var finishRoomId = (int?)null;

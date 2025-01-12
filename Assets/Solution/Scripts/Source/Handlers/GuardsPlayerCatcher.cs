@@ -33,7 +33,6 @@ namespace Greg.Handlers
                     var distance = (guard.transform.position - playerObjectHolder.GameObject.transform.position).magnitude;
                     if (distance <= builtDataHolder.CatchDistance)
                     {
-                        isGameEndedHolder.IsGameEnded = true;
                         EventContext.Bus.Invoke(new GameEndedEvent());
                     }
                 }

@@ -4,6 +4,7 @@ using Greg.Components;
 using Greg.Data;
 using Greg.Events;
 using Greg.Holders;
+using Greg.Utils;
 using UnityEngine;
 
 namespace Greg.Handlers
@@ -14,7 +15,8 @@ namespace Greg.Handlers
         private static void Handle(
             UpdateEvent _,
             ComponentsResource componentsResource,
-            PlayerObjectHolder playerObjectHolder
+            PlayerObjectHolder playerObjectHolder,
+            PathFinderHolder pathFinderHolder
         )
         {
             foreach (var gameObject in componentsResource.Get<WalkingNpcComponent>())
@@ -25,7 +27,7 @@ namespace Greg.Handlers
                 {
                     if (guardStateComponent.State == GuardStateType.Aggressive)
                     {
-                        Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed);
+                        Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed, pathFinderHolder);
                     }
                     else if (guardStateComponent.State == GuardStateType.Investigative)
                     {
@@ -41,7 +43,7 @@ namespace Greg.Handlers
 
                 if (!Mathf.Approximately((gameObject.transform.position.XY() - targetWalkPoint.Position).sqrMagnitude, 0))
                 {
-                    Walk(gameObject, targetWalkPoint.Position, speed);
+                    Walk(gameObject, targetWalkPoint.Position, speed, pathFinderHolder);
                     continue;
                 }
                 
@@ -55,11 +57,13 @@ namespace Greg.Handlers
             }
         }
 
-        private static void Walk(GameObject walker, Vector2 target, float speed)
+        private static void Walk(GameObject walker, Vector2 target, float speed, PathFinderHolder pathFinderHolder)
         {
             var walkerTransform = walker.transform;
             var walkerRigidbody = walker.GetComponent<Rigidbody2D>();
 
+            target = PathFinderUtils.GetTarget(pathFinderHolder, walkerTransform.position, target);
+            
             var direction = target - walkerTransform.position.XY();
 
             var maxDistance = speed * Time.deltaTime;

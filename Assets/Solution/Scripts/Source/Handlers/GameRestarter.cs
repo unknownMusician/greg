@@ -1,5 +1,6 @@
 using AreYouFruits.Events;
 using Greg.Events;
+using UnityEngine.SceneManagement;
 
 namespace Greg.Handlers
 {
@@ -8,9 +9,9 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             RestartButtonClickedEvent _
-            )
+        )
         {
-            // TODO : Implement game restart
+            SceneManager.LoadScene(0);
         }
     }
 }
