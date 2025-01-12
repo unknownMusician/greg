@@ -29,8 +29,6 @@ namespace Greg.Global
         private static void OrderUpdate(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<UpdateEvent>();
-            
-            eventOrderer.Order<GuardsLookDirectionUpdater>().Before<GuardsLook>();
         }
     }
 }

@@ -1,4 +1,5 @@
 using AreYouFruits.Events;
+using AreYouFruits.VectorsSwizzling;
 using Greg.Components;
 using Greg.Events;
 using Greg.Global.Api;
@@ -12,7 +13,7 @@ namespace Greg.Handlers
     {
         [EventHandler]
         private static void Handle(
-            UpdateEvent _,
+            PlayerStealEvent _,
             PlayerObjectHolder playerObjectHolder,
             BuiltDataHolder builtDataHolder,
             ComponentsResource componentsResource
@@ -20,7 +21,7 @@ namespace Greg.Handlers
         {
             foreach (var guard in componentsResource.Get<GuardComponent>())
             {
-                var distanceVector = playerObjectHolder.GameObject.transform.position - guard.transform.position;
+                var distanceVector = playerObjectHolder.GameObject.transform.position.XY() - guard.transform.position.XY();
                 if (distanceVector.magnitude > builtDataHolder.GuardLookDistance)
                 {
                     continue;

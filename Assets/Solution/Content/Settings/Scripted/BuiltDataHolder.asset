@@ -53,7 +53,7 @@ MonoBehaviour:
   - <Id>k__BackingField: 3
     <Icon>k__BackingField: {fileID: -7140695252338320620, guid: 6959f0c143a4b07409455abe71cc533c, type: 3}
     <MaxSlotsAmount>k__BackingField: 4
-  <GuardLookDistance>k__BackingField: 2
+  <GuardLookDistance>k__BackingField: 200
   <GuardLookAngle>k__BackingField: 44.8
   <PocketItemSpawnProbability>k__BackingField: 0.5
   <PathfindingGridSize>k__BackingField: 1
