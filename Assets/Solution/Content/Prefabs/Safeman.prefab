@@ -212,6 +212,7 @@ GameObject:
   - component: {fileID: -929339425716286469}
   - component: {fileID: 4562587661875695808}
   - component: {fileID: 2969493659099409622}
+  - component: {fileID: 1776650141451571580}
   m_Layer: 7
   m_Name: Safeman
   m_TagString: Untagged
@@ -313,6 +314,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <SpriteRenderer>k__BackingField: {fileID: 5393195022819072615}
+--- !u!114 &1776650141451571580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4022103872242590468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb406acdaaa74c7caa1dabdbcdc6c62a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionTargetType: 2
 --- !u!1 &6433558333639158033
 GameObject:
   m_ObjectHideFlags: 0
