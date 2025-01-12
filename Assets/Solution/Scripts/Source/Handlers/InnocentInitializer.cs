@@ -25,6 +25,7 @@ namespace Greg.Handlers
             }
             
             var pocketComponent = @event.GameObject.GetComponent<PocketComponent>();
+            var customizationRendererComponent = @event.GameObject.GetComponent<CustomizationRendererComponent>();
             
             var value = Random.value;
                 
@@ -37,6 +38,10 @@ namespace Greg.Handlers
             {
                 pocketComponent.StoredItemId = Optional.None<uint>();
             }
+
+            customizationRendererComponent.HeadSpriteRenderer.sprite = builtDataHolder.HeadSprites.GetRandomElement();
+            customizationRendererComponent.BodySpriteRenderer.sprite = builtDataHolder.BodySprites.GetRandomElement();
+            customizationRendererComponent.LegsSpriteRenderer.sprite = builtDataHolder.LegsSprites.GetRandomElement();
         }
     }
 }

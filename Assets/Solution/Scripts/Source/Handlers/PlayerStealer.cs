@@ -19,6 +19,8 @@ namespace Greg.Handlers
             InventoryItemsHolder inventoryItemsHolder
             )
         {
+            Debug.Log($"[PlayerStealer]");
+
             var shortestDistance = Mathf.Infinity;
             GameObject closestStealable = null;
             foreach (var stealable in stealablesHolder.Stealables)
