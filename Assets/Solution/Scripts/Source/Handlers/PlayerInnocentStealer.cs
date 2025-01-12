@@ -4,6 +4,7 @@ using AreYouFruits.Nullability;
 using Greg.Components;
 using Greg.Data;
 using Greg.Events;
+using Greg.Global.Api;
 using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
@@ -47,6 +48,12 @@ namespace Greg.Handlers
             pocketComponent.StoredItemId = Optional.None();
             
             inventoryItemsHolder.Add(stealableItemId);
+            playerInteractionTargetHolder.Value = Optional.None();
+            
+            EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent()
+            {
+                InteractionTargetComponent = interactionTargetComponent,
+            });
         }
 
         private static bool IsHatFull(Hat hat)
