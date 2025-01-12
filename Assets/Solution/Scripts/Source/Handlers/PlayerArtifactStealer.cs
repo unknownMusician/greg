@@ -33,6 +33,7 @@ namespace Greg.Handlers
 
             var pocketComponent = interactionTargetComponent.GetComponent<PocketComponent>();
             var playerHatComponent = playerObjectHolder.GameObject.GetComponent<HatComponent>();
+            var artifactItemSpriteComponent = interactionTargetComponent.GetComponent<ArtifactItemSpriteComponent>();
 
             var hat = playerHatComponent.Hat.GetOrThrow();
             
@@ -47,7 +48,8 @@ namespace Greg.Handlers
             
             inventoryItemsHolder.Add(stealableItemId);
             playerInteractionTargetHolder.Value = Optional.None();
-            
+            artifactItemSpriteComponent.Icon.gameObject.SetActive(false);
+
             EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent()
             {
                 InteractionTargetComponent = interactionTargetComponent,

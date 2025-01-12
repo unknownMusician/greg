@@ -30,6 +30,7 @@ namespace Greg.Global
             eventOrderer.Order<InitializeResources>().Before<PathFindingInitializer>();
             eventOrderer.Order<InitializeResources>().Before<SpeedrunTimeResetter>();
             eventOrderer.Order<InitializeResources>().Before<ArtifactsInitializer>();
+            eventOrderer.Order<ArtifactsInitializer>().Before<LevelMoneyStorageInitializer>();
             
             eventOrderer.Order<LevelMoneyStorageInitializer>().Before<CharactersInitialSpawner>();
         }
