@@ -1,6 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Global.Holders;
+using UnityEditor;
 using UnityEngine;
 
 namespace Greg.Handlers
@@ -33,6 +34,7 @@ namespace Greg.Handlers
                 {
                     Gizmos.color = ColorByRoomId(room.RoomId);
                     Gizmos.DrawWireCube(room.Area.center, room.Area.size);
+                    Handles.Label(room.Area.center, room.RoomId.ToString());
                 
                     foreach (var transition in room.Transitions)
                     {

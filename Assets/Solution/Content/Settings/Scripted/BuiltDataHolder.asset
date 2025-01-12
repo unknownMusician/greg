@@ -341,43 +341,43 @@ MonoBehaviour:
       serializedVersion: 2
       x: -146.9
       y: -12.3
-      width: 609
-      height: 413.2
+      width: 238.9
+      height: 225.3
     Transitions:
     - RoomId: 0
       Door: {x: -12.1, y: -42.8}
     - RoomId: 6
       Door: {x: -183.8, y: 116.8}
-    - RoomId: 5
-      Door: {x: 501.5, y: 299.8}
-    - RoomId: 7
-      Door: {x: 502.2, y: 89.7}
+    - RoomId: 17
+      Door: {x: 49.8, y: 250.2}
+    - RoomId: 18
+      Door: {x: 118.3, y: 119.2}
   - RoomId: 2
     Area:
       serializedVersion: 2
       x: -706.7
-      y: -311.2
+      y: -73.1
       width: 230.1
-      height: 534.2
+      height: 297.6
     Transitions:
     - RoomId: 6
       Door: {x: -445.8, y: 100.7}
     - RoomId: 3
       Door: {x: -733.1, y: 99.9}
-    - RoomId: 13
-      Door: {x: -740.8, y: -181.5}
+    - RoomId: 16
+      Door: {x: -589.7, y: -104.4}
   - RoomId: 3
     Area:
       serializedVersion: 2
       x: -947.6
       y: -72
       width: 230.1
-      height: 476.6
+      height: 295.1
     Transitions:
     - RoomId: 2
-      Door: {x: -682.35, y: 96.79}
-    - RoomId: 4
-      Door: {x: -682.35, y: 329.4}
+      Door: {x: -683.1, y: 96.79}
+    - RoomId: 14
+      Door: {x: -792.2, y: 247.9}
   - RoomId: 4
     Area:
       serializedVersion: 2
@@ -396,7 +396,7 @@ MonoBehaviour:
       width: 471.2
       height: 208.6
     Transitions:
-    - RoomId: 1
+    - RoomId: 17
       Door: {x: 442.6, y: 298.09}
   - RoomId: 6
     Area:
@@ -418,8 +418,8 @@ MonoBehaviour:
       width: 475.4
       height: 496.7
     Transitions:
-    - RoomId: 1
-      Door: {x: 433.8, y: 93.5}
+    - RoomId: 18
+      Door: {x: 438.3, y: 71.5}
     - RoomId: 8
       Door: {x: 701.3, y: -352.2}
   - RoomId: 8
@@ -445,7 +445,7 @@ MonoBehaviour:
     - RoomId: 8
       Door: {x: 497.1, y: -476.2}
     - RoomId: 10
-      Door: {x: 133.7, y: -484.5}
+      Door: {x: 133.7, y: -497.8}
   - RoomId: 10
     Area:
       serializedVersion: 2
@@ -455,9 +455,9 @@ MonoBehaviour:
       height: 146.5
     Transitions:
     - RoomId: 9
-      Door: {x: 197.7, y: -484.5}
+      Door: {x: 197.7, y: -499.4}
     - RoomId: 11
-      Door: {x: -244.6, y: -484.5}
+      Door: {x: -244.6, y: -502.1}
   - RoomId: 11
     Area:
       serializedVersion: 2
@@ -467,7 +467,7 @@ MonoBehaviour:
       height: 146.5
     Transitions:
     - RoomId: 10
-      Door: {x: -186.5, y: -487.3}
+      Door: {x: -186.5, y: -502}
     - RoomId: 12
       Door: {x: -504.3, y: -464.2}
   - RoomId: 12
@@ -488,15 +488,77 @@ MonoBehaviour:
       x: -953.4
       y: -540.1
       width: 237.5
-      height: 461.2
+      height: 223
     Transitions:
     - RoomId: 12
-      Door: {x: -680.2, y: -433.1}
+      Door: {x: -682.6, y: -433.1}
+    - RoomId: 15
+      Door: {x: -814, y: -282.6}
+  - RoomId: 14
+    Area:
+      serializedVersion: 2
+      x: -951.9
+      y: 227.7
+      width: 237.5
+      height: 177
+    Transitions:
+    - RoomId: 4
+      Door: {x: -687.5, y: 331.3}
+    - RoomId: 3
+      Door: {x: -794.3, y: 198.2}
+  - RoomId: 15
+    Area:
+      serializedVersion: 2
+      x: -951.9
+      y: -310
+      width: 237.5
+      height: 230.6
+    Transitions:
     - RoomId: 2
-      Door: {x: -679.5, y: -177.5}
+      Door: {x: -682.2, y: -196}
+    - RoomId: 13
+      Door: {x: -811.2, y: -343.1}
+  - RoomId: 16
+    Area:
+      serializedVersion: 2
+      x: -707.5
+      y: -310
+      width: 229.9
+      height: 230.6
+    Transitions:
+    - RoomId: 15
+      Door: {x: -739.2, y: -196}
+    - RoomId: 2
+      Door: {x: -590.6, y: -48.2}
+  - RoomId: 17
+    Area:
+      serializedVersion: 2
+      x: -149.2
+      y: 218.3
+      width: 614.2
+      height: 187.2
+    Transitions:
+    - RoomId: 1
+      Door: {x: 50.3, y: 176.4}
+    - RoomId: 5
+      Door: {x: 493.2, y: 300.4}
+    - RoomId: 18
+      Door: {x: 181.9, y: 182}
+  - RoomId: 18
+    Area:
+      serializedVersion: 2
+      x: 96.3
+      y: -12.3
+      width: 370.6
+      height: 224
+    Transitions:
+    - RoomId: 1
+      Door: {x: 75.9, y: 117.1}
+    - RoomId: 17
+      Door: {x: 176.7, y: 249.1}
+    - RoomId: 7
+      Door: {x: 497.5, y: 63.4}
   <WalkDelay>k__BackingField:
-    Min: 0
-    Max: 0
-    Min: 2
-    Max: 4
+    Min: 5
+    Max: 7
   <ExitDistance>k__BackingField: 5
