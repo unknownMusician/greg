@@ -45,6 +45,7 @@ namespace Greg.Global
             
             eventBus.Subscribe(new InnocentInitializer());
             eventBus.Subscribe(new CharacterHatInitializer());
+            eventBus.Subscribe(new CharacterCrowdSfxTypeInitializer());
             
             eventBus.Subscribe(new InteractionTargetTriggerEnterHandler());
             eventBus.Subscribe(new InteractionTargetTriggerExitHandler());
