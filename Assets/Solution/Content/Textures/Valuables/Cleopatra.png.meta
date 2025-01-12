@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Cleopatra_0: -8025907009570885076
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
