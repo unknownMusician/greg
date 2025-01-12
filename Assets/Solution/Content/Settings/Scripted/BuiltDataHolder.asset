@@ -350,4 +350,7 @@ MonoBehaviour:
       Door: {x: -680.2, y: -433.1}
     - RoomId: 2
       Door: {x: -679.5, y: -177.5}
+  <WalkDelay>k__BackingField:
+    Min: 2
+    Max: 4
   <ExitDistance>k__BackingField: 5

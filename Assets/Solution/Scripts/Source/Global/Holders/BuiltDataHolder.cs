@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using AreYouFruits.Events;
+using AreYouFruits.Ranges;
 using Greg.Data;
 using Greg.Utils;
 using UnityEngine;
@@ -49,6 +50,7 @@ namespace Greg.Global.Holders
         
         [Header("Path")]
         [field: SerializeField] public PathFinderRoom[] Rooms { get; private set; }
+        [field: SerializeField] public Range<float> WalkDelay { get; private set; }
         
         [Header("Door")]
         [field: SerializeField] public float ExitDistance { get; private set; }
