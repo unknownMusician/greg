@@ -759,6 +759,7 @@ GameObject:
   - component: {fileID: 6427298027373712193}
   - component: {fileID: 2323162676508097242}
   - component: {fileID: 7532584872209294103}
+  - component: {fileID: 3277159860974922459}
   m_Layer: 9
   m_Name: Innocent
   m_TagString: Untagged
@@ -902,7 +903,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43ff09d26d594ad1ac83956d2ef92410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 3
+  Speed: 100
 --- !u!114 &1834025451379763483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -960,6 +961,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <HintHolder>k__BackingField: {fileID: 6076063262841616201}
   <Icon>k__BackingField: {fileID: 1802873682871161828}
+--- !u!114 &3277159860974922459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7148835322672052025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5cbc86d2e648e8982f3978b1bd959d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetIndex: 0
+  WaitedTime: 0
+  NeededTime: 0
 --- !u!1 &7161471094041632425
 GameObject:
   m_ObjectHideFlags: 0
