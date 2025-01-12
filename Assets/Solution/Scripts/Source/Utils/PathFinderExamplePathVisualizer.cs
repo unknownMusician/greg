@@ -12,7 +12,7 @@ namespace Greg.Utils
         private void OnDrawGizmos()
         {
             var pathFinderHolder = ResourcesLocator.Get<PathFinderHolder>();
-            var target = PathFinderUtils.GetDirection(pathFinderHolder, start.position, end.position);
+            var target = PathFinderUtils.GetTarget(pathFinderHolder, start.position, end.position);
             
             Gizmos.color = Color.red;
             Gizmos.DrawLine(start.position, target);
