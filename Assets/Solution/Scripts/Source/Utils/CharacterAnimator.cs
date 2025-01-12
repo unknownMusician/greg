@@ -3,6 +3,7 @@ using UnityEngine;
 namespace Greg.Utils
 {
     public sealed class CharacterAnimator : MonoBehaviour
+        // todo: to ecs approach
     {
         private static readonly int AnimatorBoolIsMoving = Animator.StringToHash("IsMoving");
         
