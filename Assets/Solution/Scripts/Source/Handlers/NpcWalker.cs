@@ -3,6 +3,7 @@ using AreYouFruits.VectorsSwizzling;
 using Greg.Components;
 using Greg.Data;
 using Greg.Events;
+using Greg.Global.Holders;
 using Greg.Holders;
 using Greg.Utils;
 using UnityEngine;
@@ -15,6 +16,8 @@ namespace Greg.Handlers
         private static void Handle(
             UpdateEvent _,
             ComponentsResource componentsResource,
+            BuiltDataHolder builtDataHolder,
+            SceneDataHolder sceneDataHolder,
             PlayerObjectHolder playerObjectHolder,
             PathFinderHolder pathFinderHolder
         )
@@ -38,21 +41,23 @@ namespace Greg.Handlers
                 }
                 
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
+                
+                var targetWalkPoint = sceneDataHolder.WalkPointsParent.GetChild(walkingNpcComponent.TargetIndex).position;
 
-                var targetWalkPoint = walkingNpcComponent.WalkPath[walkingNpcComponent.TargetIndex];
-
-                if (!Mathf.Approximately((gameObject.transform.position.XY() - targetWalkPoint.Position).sqrMagnitude, 0))
+                if (!Mathf.Approximately((gameObject.transform.position.XY() - targetWalkPoint.XY()).sqrMagnitude, 0))
                 {
-                    Walk(gameObject, targetWalkPoint.Position, speed, pathFinderHolder);
+                    Walk(gameObject, targetWalkPoint, speed, pathFinderHolder);
                     continue;
                 }
                 
                 walkingNpcComponent.WaitedTime += Time.deltaTime;
-                if (walkingNpcComponent.WaitedTime > targetWalkPoint.WaitDuration)
+                if (walkingNpcComponent.WaitedTime > walkingNpcComponent.NeededTime)
                 {
                     walkingNpcComponent.TargetIndex =
-                        (walkingNpcComponent.TargetIndex + 1) % walkingNpcComponent.WalkPath.Count;
+                        (walkingNpcComponent.TargetIndex + 1) % sceneDataHolder.WalkPointsParent.childCount;
                     walkingNpcComponent.WaitedTime = 0;
+                    walkingNpcComponent.NeededTime =
+                        Random.Range(builtDataHolder.WalkDelay.Min, builtDataHolder.WalkDelay.Max);
                 }
             }
         }
