@@ -15,6 +15,7 @@ namespace Greg.Global.Holders
         
         [Header("Stealing")]
         [field: SerializeField] public float StealDistance { get; private set; }
+        [field: SerializeField] public float StealDurationInSeconds { get; private set; }
         
         [Header("Inventory")]
         [field: SerializeField] public int InventoryCapacity { get; private set; }
