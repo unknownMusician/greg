@@ -35,8 +35,6 @@ namespace Greg.Handlers
             var pocketComponent = interactionTargetComponent.GetComponent<PocketComponent>();
             var playerHatComponent = playerObjectHolder.GameObject.GetComponent<HatComponent>();
 
-            Debug.Log($"[PlayerInnocentStealer] {pocketComponent.StoredItemId}");
-
             var hat = playerHatComponent.Hat.GetOrThrow();
             
             if (!pocketComponent.StoredItemId.IsInitialized || IsHatFull(hat))

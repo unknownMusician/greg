@@ -24,9 +24,11 @@ namespace Greg.Global
             
             eventBus.Subscribe(new PlayerMoveInputReader());
             eventBus.Subscribe(new PlayerStealInputReader());
+            eventBus.Subscribe(new HatSwapInputReader());
             
             eventBus.Subscribe(new PlayerMover());
             eventBus.Subscribe(new PlayerStealer());
+            eventBus.Subscribe(new PlayerInnocentStealer());
 
             eventBus.Subscribe(new InventoryChangeTracker());
             eventBus.Subscribe(new InventoryViewUpdater());
@@ -52,6 +54,9 @@ namespace Greg.Global
             eventBus.Subscribe(new InteractionTargetStateChangeHandler());
             
             eventBus.Subscribe(new PathFindingGridInitializer());
+            
+            eventBus.Subscribe(new InnocentHatSwapper());
+            eventBus.Subscribe(new SafemanHatSwapper());
         }
     }
 }

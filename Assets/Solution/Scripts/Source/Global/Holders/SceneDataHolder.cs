@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Greg.Components;
 using Greg.Utils.TagSearcher;
 using TMPro;
 using UnityEngine;
