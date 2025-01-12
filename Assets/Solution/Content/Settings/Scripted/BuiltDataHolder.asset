@@ -12,10 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92d808f95ab043b9b3b72acc7b07ddba, type: 3}
   m_Name: BuiltDataHolder
   m_EditorClassIdentifier: 
-  <PlayerSpeed>k__BackingField: 250
+  <HeightDepthMultiplier>k__BackingField: 1
   <StealDistance>k__BackingField: 1
   <InventoryCapacity>k__BackingField: 4
-  <InventoryCellPrefab>k__BackingField: {fileID: 488343677632883471, guid: bab28dec84b431e46bd80303136dbb3e, type: 3}
   <ItemSettings>k__BackingField:
   - <Id>k__BackingField: 0
     <Name>k__BackingField: Wallet
@@ -57,6 +56,7 @@ MonoBehaviour:
   <GuardLookDistance>k__BackingField: 2
   <GuardLookAngle>k__BackingField: 44.8
   <PocketItemSpawnProbability>k__BackingField: 0.5
+  <PathfindingGridSize>k__BackingField: 1
   <PlayerPrefab>k__BackingField: {fileID: 4740697378087300763, guid: a8ce9876ad74b6c428d1a237fe5fd3c1, type: 3}
   <SafemanPrefab>k__BackingField: {fileID: 4022103872242590468, guid: ea22228e04bf2144ca903b5f9ad2d21b, type: 3}
   <InnocentPrefab>k__BackingField: {fileID: 7148835322672052025, guid: 035b30555c77994438de4563c84b63b6, type: 3}
