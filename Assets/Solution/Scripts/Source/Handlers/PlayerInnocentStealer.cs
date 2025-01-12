@@ -21,8 +21,6 @@ namespace Greg.Handlers
             PlayerObjectHolder playerObjectHolder
         )
         {
-            Debug.Log($"[PlayerInnocentStealer]");
-
             if (!playerInteractionTargetHolder.Value.IsInitialized)
             {
                 return;
