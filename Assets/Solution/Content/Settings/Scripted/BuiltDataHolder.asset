@@ -56,6 +56,18 @@ MonoBehaviour:
   <GuardLookDistance>k__BackingField: 200
   <GuardLookAngle>k__BackingField: 44.8
   <PocketItemSpawnProbability>k__BackingField: 1
+  <HeadSprites>k__BackingField:
+  - {fileID: 2438809089424711796, guid: 27d9e1c805dd1f3469c43219611d5d3b, type: 3}
+  - {fileID: 2101683011973518619, guid: cea6b59c12483ef4bbf6084805f74174, type: 3}
+  - {fileID: 7616842980244080564, guid: 2b6dd937d57bddc44a4fa3ece57f17b1, type: 3}
+  <BodySprites>k__BackingField:
+  - {fileID: -5460745012048361445, guid: 7e2ea2974e52fce498feab695491777e, type: 3}
+  - {fileID: -4934261235433634734, guid: a4f56fb18eb0298438c6738004dd8836, type: 3}
+  - {fileID: 7414926901492091246, guid: 4c989e83e62b0fa40bc0e27411a7c9a8, type: 3}
+  <LegsSprites>k__BackingField:
+  - {fileID: -8294178876990648902, guid: e7304314d714e254cac69b56e1b14634, type: 3}
+  - {fileID: -8400546454809434569, guid: 377a3faf9017a664faa4e512f28f448d, type: 3}
+  - {fileID: 6005933503666368651, guid: d5f32bf2e0f8b5d489da118a4970c2c7, type: 3}
   <PathfindingGridSize>k__BackingField: 1
   <PlayerPrefab>k__BackingField: {fileID: 4740697378087300763, guid: a8ce9876ad74b6c428d1a237fe5fd3c1, type: 3}
   <SafemanPrefab>k__BackingField: {fileID: 4022103872242590468, guid: ea22228e04bf2144ca903b5f9ad2d21b, type: 3}

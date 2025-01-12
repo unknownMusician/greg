@@ -28,6 +28,11 @@ namespace Greg.Global.Holders
         [Header("Innocents")]
         [field: SerializeField] public float PocketItemSpawnProbability { get; private set; }
         
+        [Header("Customization")]
+        [field: SerializeField] public List<Sprite> HeadSprites { get; private set; }
+        [field: SerializeField] public List<Sprite> BodySprites { get; private set; }
+        [field: SerializeField] public List<Sprite> LegsSprites { get; private set; }
+        
         [Header("Pathfinding")]
         [field: SerializeField] public float PathfindingGridSize { get; private set; }
         
