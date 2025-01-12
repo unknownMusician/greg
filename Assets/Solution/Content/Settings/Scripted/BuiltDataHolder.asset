@@ -30,28 +30,52 @@ MonoBehaviour:
     <Difficulty>k__BackingField: 2
   - <Id>k__BackingField: 2
     <Name>k__BackingField: Ring
-    <Icon>k__BackingField: {fileID: 5867704936323903554, guid: 5aa0e24fd67759f4f93df7d397a29d4c, type: 3}
+    <Icon>k__BackingField: {fileID: 4004708080983207187, guid: 473e3eb5d33c23148aef8b200dc2e3e2, type: 3}
     <SourceType>k__BackingField: 0
     <Price>k__BackingField: 200
     <Difficulty>k__BackingField: 3
   - <Id>k__BackingField: 3
-    <Name>k__BackingField: Hook v ebalo
-    <Icon>k__BackingField: {fileID: -6433056010351858686, guid: 06f87c05250f2394c9033c73437bf2ff, type: 3}
+    <Name>k__BackingField: Necklace
+    <Icon>k__BackingField: {fileID: -2919378836723705254, guid: f1cbc13fd84f3534188da804b87095e6, type: 3}
     <SourceType>k__BackingField: 0
     <Price>k__BackingField: 333
-    <Difficulty>k__BackingField: 0
+    <Difficulty>k__BackingField: 4
   <HatSettings>k__BackingField:
   - <Id>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 5064564714242801281, guid: 59d09c8c87c08cb47923b207a19bc10d, type: 3}
     <MaxSlotsAmount>k__BackingField: 4
   - <Id>k__BackingField: 1
-    <Icon>k__BackingField: {fileID: 7661246918840160723, guid: 64b392151246830478849e693e095477, type: 3}
+    <Icon>k__BackingField: {fileID: -7509563597995356589, guid: 2fb232641c3e6ae4f8c873b9f32ae01a, type: 3}
     <MaxSlotsAmount>k__BackingField: 4
   - <Id>k__BackingField: 2
-    <Icon>k__BackingField: {fileID: 3267007140831743742, guid: 4fd419bae10924b48b04ab7d66405cc7, type: 3}
+    <Icon>k__BackingField: {fileID: 8724509642168982425, guid: 20c6c58c8bb3c1345b387af0744d4a49, type: 3}
     <MaxSlotsAmount>k__BackingField: 4
   - <Id>k__BackingField: 3
+    <Icon>k__BackingField: {fileID: 7661246918840160723, guid: 64b392151246830478849e693e095477, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 4
+    <Icon>k__BackingField: {fileID: -6013110573429308843, guid: ec8299fba896b85469478b022d245ba3, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 5
+    <Icon>k__BackingField: {fileID: -6045271686955176483, guid: d6cd66ed738694f418c819bf46fcf530, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 6
+    <Icon>k__BackingField: {fileID: 3267007140831743742, guid: 4fd419bae10924b48b04ab7d66405cc7, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 7
+    <Icon>k__BackingField: {fileID: -776797259191858385, guid: 2d22b30c4c9022f43afcfff22252c4c9, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 8
+    <Icon>k__BackingField: {fileID: -776797259191858385, guid: 2d22b30c4c9022f43afcfff22252c4c9, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 9
     <Icon>k__BackingField: {fileID: -7140695252338320620, guid: 6959f0c143a4b07409455abe71cc533c, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 10
+    <Icon>k__BackingField: {fileID: -3263435976347135884, guid: a49fcc89dcc6e8c4998da80820968227, type: 3}
+    <MaxSlotsAmount>k__BackingField: 4
+  - <Id>k__BackingField: 11
+    <Icon>k__BackingField: {fileID: 1486736665581023546, guid: bd082d2b12ae69949b2733159966ecca, type: 3}
     <MaxSlotsAmount>k__BackingField: 4
   <GuardLookDistance>k__BackingField: 200
   <GuardLookAngle>k__BackingField: 44.8
@@ -59,16 +83,31 @@ MonoBehaviour:
   <PocketItemSpawnProbability>k__BackingField: 1
   <HeadSprites>k__BackingField:
   - {fileID: 2438809089424711796, guid: 27d9e1c805dd1f3469c43219611d5d3b, type: 3}
+  - {fileID: 6156871883344929344, guid: 7013a30e324abf14693e5fe2fde0eeb8, type: 3}
   - {fileID: 2101683011973518619, guid: cea6b59c12483ef4bbf6084805f74174, type: 3}
+  - {fileID: -2522022535789172425, guid: c90de35c25b80a1418992985d32e5ec1, type: 3}
   - {fileID: 7616842980244080564, guid: 2b6dd937d57bddc44a4fa3ece57f17b1, type: 3}
+  - {fileID: -1512547664134031737, guid: 32bc3960428378a4eb71777cc44ad916, type: 3}
   <BodySprites>k__BackingField:
   - {fileID: -5460745012048361445, guid: 7e2ea2974e52fce498feab695491777e, type: 3}
+  - {fileID: 771140060019977627, guid: 322cc4fcaa6ac1348ba580cfc28465a9, type: 3}
+  - {fileID: -4628018908371221730, guid: 2d28abc171fbe494597b56d22ffb27e8, type: 3}
   - {fileID: -4934261235433634734, guid: a4f56fb18eb0298438c6738004dd8836, type: 3}
+  - {fileID: 9210392037252987510, guid: 22177e6c75bae4345b11e62d5e392f2f, type: 3}
+  - {fileID: 7676322752994576312, guid: ddeb70b4a0e92304fb08d3ed7c7f2b63, type: 3}
   - {fileID: 7414926901492091246, guid: 4c989e83e62b0fa40bc0e27411a7c9a8, type: 3}
+  - {fileID: -5348738753611759871, guid: 24211b14f7033d0499b78c83b21d16d7, type: 3}
+  - {fileID: -3674308110941065410, guid: 4da8e4dea60bc504cbd2a8721524dc21, type: 3}
   <LegsSprites>k__BackingField:
   - {fileID: -8294178876990648902, guid: e7304314d714e254cac69b56e1b14634, type: 3}
+  - {fileID: -6792117204001374494, guid: 1099e8504655e3146beccd3761d719c0, type: 3}
+  - {fileID: 9049573039601687709, guid: 1467cca1425760b49a867e674eb5d50d, type: 3}
   - {fileID: -8400546454809434569, guid: 377a3faf9017a664faa4e512f28f448d, type: 3}
+  - {fileID: 662910514783749683, guid: 8eb0d7767d5180c47bd80acb024f565a, type: 3}
+  - {fileID: -7258454144004774563, guid: 6c22aa7c16dd01d4280b1c924b9eb300, type: 3}
   - {fileID: 6005933503666368651, guid: d5f32bf2e0f8b5d489da118a4970c2c7, type: 3}
+  - {fileID: -4411597703018386035, guid: d42090a36c50ad14189082b28ba396ad, type: 3}
+  - {fileID: -8885527443922825403, guid: c4e45ae8fd7477d469c55d0596140f7c, type: 3}
   <PathfindingGridSize>k__BackingField: 1
   <PlayerPrefab>k__BackingField: {fileID: 4740697378087300763, guid: a8ce9876ad74b6c428d1a237fe5fd3c1, type: 3}
   <SafemanPrefab>k__BackingField: {fileID: 4022103872242590468, guid: ea22228e04bf2144ca903b5f9ad2d21b, type: 3}
