@@ -1,4 +1,5 @@
 using AreYouFruits.Events;
+using AreYouFruits.Nullability;
 using AreYouFruits.VectorsSwizzling;
 using Greg.Components;
 using Greg.Events;
@@ -38,6 +39,9 @@ namespace Greg.Handlers
                 {
                     return;
                 }
+
+                var hatId = playerObjectHolder.GameObject.GetComponent<HatComponent>().Hat.GetOrThrow().HatId;
+                guard.GetComponent<GuardInvestigateGoalComponent>().GoalHatId = new Optional<uint>(hatId);
                 
                 EventContext.Bus.Invoke(new GuardDetectedPlayerEvent
                 {

@@ -27,11 +27,13 @@ namespace Greg.Handlers
                     {
                         Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed);
                     }
+                    else if (guardStateComponent.State == GuardStateType.Investigative)
+                    {
+                        gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+                    }
                     
                     continue;
                 }
-                
-                continue;
                 
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
 
