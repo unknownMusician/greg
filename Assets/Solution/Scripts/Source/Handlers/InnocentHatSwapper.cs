@@ -22,8 +22,6 @@ namespace Greg.Handlers
             InventoryItemsHolder inventoryItemsHolder
         )
         {
-            Debug.Log($"[InnocentHatSwapper]");
-
             if (!playerInteractionTargetHolder.Value.IsInitialized)
             {
                 return;
@@ -57,6 +55,7 @@ namespace Greg.Handlers
             inventoryItemsHolder.Clear();
             inventoryItemsHolder.AddRange(itemsFromInnocent);
 
+            // JUST USE IT!!!
             EventContext.Bus.Invoke(new PlayerHatSwappedEvent());
         }
     }

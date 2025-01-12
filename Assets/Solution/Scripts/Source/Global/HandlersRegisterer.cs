@@ -59,6 +59,10 @@ namespace Greg.Global
             
             eventBus.Subscribe(new InnocentHatSwapper());
             eventBus.Subscribe(new SafemanHatSwapper());
+            
+            eventBus.Subscribe(new LevelMoneyStorageInitializer());
+            eventBus.Subscribe(new LevelMoneyMaxValueUpdater());
+            eventBus.Subscribe(new LevelMoneyStorageVisualUpdater());
         }
     }
 }
