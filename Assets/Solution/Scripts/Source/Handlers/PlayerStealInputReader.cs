@@ -39,8 +39,6 @@ namespace Greg.Handlers
                 return;
             }
             
-            Debug.Log($"Steal progress: {stealProgressHolder.StealingProgressNormalized}");
-            
             if (stealProgressHolder.StealingProgressNormalized >= 1f)
             {
                 EventContext.Bus.Invoke(new PlayerStealInputEvent());

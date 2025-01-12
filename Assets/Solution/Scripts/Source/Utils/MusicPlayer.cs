@@ -27,7 +27,7 @@ namespace Greg.Utils
             
             foreach (var o in components.Get<GuardStateComponent>())
             {
-                if (o.GetComponent<GuardStateComponent>().State == GuardStateType.Aggressive)
+                if (o.GetComponent<GuardStateComponent>().State is GuardStateType.Aggressive)
                 {
                     isAggressive = true;
                 }
@@ -41,6 +41,8 @@ namespace Greg.Utils
             {
                 aggressiveProgress -= speed * Time.deltaTime;
             }
+
+            aggressiveProgress = Mathf.Clamp01(aggressiveProgress);
             
             UpdateState();
         }
