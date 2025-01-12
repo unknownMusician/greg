@@ -27,6 +27,7 @@ namespace Greg.Global
             eventOrderer.Order<InitializeResources>().Before<StealablesHolderInitializer>();
             eventOrderer.Order<InitializeResources>().Before<PathFindingGridInitializer>();
             eventOrderer.Order<InitializeResources>().Before<LevelMoneyStorageInitializer>();
+            eventOrderer.Order<InitializeResources>().Before<PathFindingInitializer>();
             
             eventOrderer.Order<LevelMoneyStorageInitializer>().Before<CharactersInitialSpawner>();
         }

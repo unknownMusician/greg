@@ -57,6 +57,8 @@ namespace Greg.Global
             eventBus.Subscribe(new InnocentInteractionStateChangeHandler());
             
             eventBus.Subscribe(new PathFindingGridInitializer());
+            eventBus.Subscribe(new PathFindingInitializer());
+            eventBus.Subscribe(new PathFindingVisualizer());
             
             eventBus.Subscribe(new InnocentHatSwapper());
             eventBus.Subscribe(new SafemanHatSwapper());

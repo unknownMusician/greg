@@ -45,5 +45,8 @@ namespace Greg.Global.Holders
         
         [Header("Sfx")]
         [field: SerializeField] public InspectorDictionary<CrowdSfxCharacterType, AudioClip[]> CrowdSfx { get; private set; }
+        
+        [Header("Path")]
+        [field: SerializeField] public PathFinderRoom[] Rooms { get; private set; }
     }
 }
