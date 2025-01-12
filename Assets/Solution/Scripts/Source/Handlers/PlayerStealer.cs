@@ -1,6 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Components;
 using Greg.Events;
+using Greg.Global.Api;
 using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
@@ -18,6 +19,8 @@ namespace Greg.Handlers
             InventoryItemsHolder inventoryItemsHolder
             )
         {
+            Debug.Log($"[PlayerStealer]");
+
             var shortestDistance = Mathf.Infinity;
             GameObject closestStealable = null;
             foreach (var stealable in stealablesHolder.Stealables)
@@ -29,6 +32,8 @@ namespace Greg.Handlers
                     closestStealable = stealable;
                 }
             }
+
+            EventContext.Bus.Invoke(new PlayerStealEvent());
 
             if (closestStealable == null)
             {

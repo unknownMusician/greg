@@ -15,5 +15,20 @@ namespace Greg.Holders
             items.Add(itemId);
             InventoryChangeLastFrame = Time.frameCount;
         }
+        
+        public void AddRange(IEnumerable<uint> itemIds)
+        {
+            foreach (var itemId in itemIds)
+            {
+                items.Add(itemId);
+            }
+            InventoryChangeLastFrame = Time.frameCount;
+        }
+        
+        public void Clear()
+        {
+            items.Clear();
+            InventoryChangeLastFrame = Time.frameCount;
+        }
     }
 }

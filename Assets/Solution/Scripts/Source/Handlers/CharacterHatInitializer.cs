@@ -5,6 +5,7 @@ using AreYouFruits.Nullability;
 using Greg.Components;
 using Greg.Data;
 using Greg.Events;
+using Greg.Global.Api;
 using Greg.Global.Holders;
 
 namespace Greg.Handlers
@@ -14,7 +15,8 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             CharacterSpawnedEvent @event,
-            BuiltDataHolder builtDataHolder
+            BuiltDataHolder builtDataHolder,
+            SceneDataHolder sceneDataHolder
         )
         {
             if (@event.CharacterType == CharacterType.Guard)
@@ -41,6 +43,12 @@ namespace Greg.Handlers
             
             var hatRendererComponent = @event.GameObject.GetComponent<HatRendererComponent>();
             hatRendererComponent.SpriteRenderer.sprite = hatSettings.Icon;
+
+            if (@event.CharacterType == CharacterType.Player)
+            {
+                sceneDataHolder.PlayerHatVisualComponent.Image.sprite = hatSettings.Icon;
+                EventContext.Bus.Invoke(new InventoryChangedEvent());
+            }
         }
     }
 }

@@ -24,9 +24,11 @@ namespace Greg.Global
             
             eventBus.Subscribe(new PlayerMoveInputReader());
             eventBus.Subscribe(new PlayerStealInputReader());
+            eventBus.Subscribe(new HatSwapInputReader());
             
             eventBus.Subscribe(new PlayerMover());
             eventBus.Subscribe(new PlayerStealer());
+            eventBus.Subscribe(new PlayerInnocentStealer());
 
             eventBus.Subscribe(new InventoryChangeTracker());
             eventBus.Subscribe(new InventoryViewUpdater());
@@ -42,6 +44,9 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardsLook());
             eventBus.Subscribe(new GuardsDetectedPlayerNotifier());
             eventBus.Subscribe(new GuardStateVisualizer());
+            eventBus.Subscribe(new GuardLookAreaVisualizer());
+            eventBus.Subscribe(new GuardsPlayerLostHandler());
+            eventBus.Subscribe(new GuardsPlayerCatcher());
             
             eventBus.Subscribe(new InnocentInitializer());
             eventBus.Subscribe(new CharacterHatInitializer());
@@ -49,11 +54,21 @@ namespace Greg.Global
             
             eventBus.Subscribe(new InteractionTargetTriggerEnterHandler());
             eventBus.Subscribe(new InteractionTargetTriggerExitHandler());
-            eventBus.Subscribe(new InteractionTargetStateChangeHandler());
+            eventBus.Subscribe(new InnocentInteractionStateChangeHandler());
             
             eventBus.Subscribe(new PathFindingGridInitializer());
             eventBus.Subscribe(new PathFindingInitializer());
             eventBus.Subscribe(new PathFindingVisualizer());
+            
+            eventBus.Subscribe(new InnocentHatSwapper());
+            eventBus.Subscribe(new SafemanHatSwapper());
+            
+            eventBus.Subscribe(new LevelMoneyStorageInitializer());
+            eventBus.Subscribe(new LevelMoneyMaxValueUpdater());
+            eventBus.Subscribe(new LevelMoneyStorageVisualUpdater());
+
+            eventBus.Subscribe(new GameEnder());
+            eventBus.Subscribe(new GameRestarter());
         }
     }
 }

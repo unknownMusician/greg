@@ -19,10 +19,12 @@ namespace Greg.Global
             
             ResourcesLocator.Add(new InventoryItemsHolder());
             ResourcesLocator.Add(new PathFinderHolder());
+            ResourcesLocator.Add(new LevelMoneyStorageHolder());
 
             ResourcesLocator.Add(new IsGamePausedHolder());
             ResourcesLocator.Add(new IsSoundMutedHolder());
             ResourcesLocator.Add(new PlayerInteractionTargetHolder());
+            ResourcesLocator.Add(new IsGameEndedHolder());
         }
     }
 }

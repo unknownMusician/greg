@@ -14,6 +14,7 @@ namespace Greg.Global
         {
             OrderStart(orderer);
             OrderUpdate(orderer);
+            OrderCharacterSpawnedEvent(orderer);
         }
 
         private static void OrderStart(GroupGraphOrderer orderer)
@@ -24,14 +25,22 @@ namespace Greg.Global
             eventOrderer.Order<InitializeResources>().Before<CharactersInitialSpawner>();
             eventOrderer.Order<InitializeResources>().Before<StealablesHolderInitializer>();
             eventOrderer.Order<InitializeResources>().Before<PathFindingGridInitializer>();
+            eventOrderer.Order<InitializeResources>().Before<LevelMoneyStorageInitializer>();
             eventOrderer.Order<InitializeResources>().Before<PathFindingInitializer>();
+            
+            eventOrderer.Order<LevelMoneyStorageInitializer>().Before<CharactersInitialSpawner>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<UpdateEvent>();
-            
-            eventOrderer.Order<GuardsLookDirectionUpdater>().Before<GuardsLook>();
+        }
+        
+        private static void OrderCharacterSpawnedEvent(GroupGraphOrderer orderer)
+        {
+            var eventOrderer = orderer.ForEvent<CharacterSpawnedEvent>();
+
+            eventOrderer.Order<InnocentInitializer>().Before<LevelMoneyMaxValueUpdater>();
         }
     }
 }

@@ -13,18 +13,29 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            ComponentsResource componentsResource
+            ComponentsResource componentsResource,
+            PlayerObjectHolder playerObjectHolder
         )
         {
             foreach (var gameObject in componentsResource.Get<WalkingNpcComponent>())
             {
-                if (!CanWalk(gameObject))
+                var speed = gameObject.GetComponent<CharacterSpeedComponent>().Speed;
+
+                if (gameObject.TryGetComponent(out GuardStateComponent guardStateComponent))
                 {
+                    if (guardStateComponent.State == GuardStateType.Aggressive)
+                    {
+                        Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed);
+                    }
+                    else if (guardStateComponent.State == GuardStateType.Investigative)
+                    {
+                        gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+                    }
+                    
                     continue;
                 }
-
+                
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
-                var speed = gameObject.GetComponent<CharacterSpeedComponent>().Speed;
 
                 var targetWalkPoint = walkingNpcComponent.WalkPath[walkingNpcComponent.TargetIndex];
 
@@ -42,16 +53,6 @@ namespace Greg.Handlers
                     walkingNpcComponent.WaitedTime = 0;
                 }
             }
-        }
-
-        private static bool CanWalk(GameObject gameObject)
-        {
-            if (!gameObject.TryGetComponent(out GuardStateComponent guardStateComponent))
-            {
-                return true;
-            }
-
-            return guardStateComponent.State is GuardStateType.Calm;
         }
 
         private static void Walk(GameObject walker, Vector2 target, float speed)

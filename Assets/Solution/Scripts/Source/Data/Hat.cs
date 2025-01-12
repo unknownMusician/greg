@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Greg.Data
 {
     [Serializable]
-    public struct Hat
+    public class Hat
     {
         public uint HatId;
         public IReadOnlyList<InventorySlot> InventorySlots;

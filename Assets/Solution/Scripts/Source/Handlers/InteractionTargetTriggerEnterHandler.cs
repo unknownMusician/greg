@@ -20,7 +20,10 @@ namespace Greg.Handlers
             
             playerInteractionTargetHolder.Value = @event.InteractionTargetComponent;
                 
-            EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent());
+            EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent()
+            {
+                InteractionTargetComponent = @event.InteractionTargetComponent,
+            });
         }
     }
 }
