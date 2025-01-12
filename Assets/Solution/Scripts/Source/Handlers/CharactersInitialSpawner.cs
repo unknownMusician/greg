@@ -3,6 +3,7 @@ using Greg.Data;
 using Greg.Events;
 using Greg.Global.Api;
 using Greg.Global.Holders;
+using Greg.Holders;
 using UnityEngine;
 
 namespace Greg.Handlers
@@ -13,7 +14,8 @@ namespace Greg.Handlers
         private static void Handle(
             StartEvent _,
             SceneDataHolder sceneDataHolder,
-            BuiltDataHolder builtDataHolder
+            BuiltDataHolder builtDataHolder,
+            NpcHolder npcHolder
         )
         {
             var playerGameObject = Object.Instantiate(builtDataHolder.PlayerPrefab, sceneDataHolder.PlayerSpawnPoint.position, Quaternion.identity);
@@ -26,6 +28,7 @@ namespace Greg.Handlers
             foreach (var spawnPosition in sceneDataHolder.InnocentSpawnPoints)
             {
                 var innocentGameObject = Object.Instantiate(builtDataHolder.InnocentPrefab, spawnPosition.position, Quaternion.identity);
+                npcHolder.Values.Add(innocentGameObject);
                 EventContext.Bus.Invoke(new CharacterSpawnedEvent
                 {
                     CharacterType = CharacterType.Innocent,
@@ -36,6 +39,7 @@ namespace Greg.Handlers
             foreach (var spawnPosition in sceneDataHolder.SafemanSpawnPoints)
             {
                 var safemanGameObject = Object.Instantiate(builtDataHolder.SafemanPrefab, spawnPosition.position, Quaternion.identity);
+                npcHolder.Values.Add(safemanGameObject);
                 EventContext.Bus.Invoke(new CharacterSpawnedEvent
                 {
                     CharacterType = CharacterType.Safeman,
@@ -46,6 +50,7 @@ namespace Greg.Handlers
             foreach (var spawnPosition in sceneDataHolder.GuardSpawnPoints)
             {
                 var guardGameObject = Object.Instantiate(builtDataHolder.GuardPrefab, spawnPosition.position, Quaternion.identity);
+                npcHolder.Values.Add(guardGameObject);
                 EventContext.Bus.Invoke(new CharacterSpawnedEvent
                 {
                     CharacterType = CharacterType.Guard,
