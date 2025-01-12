@@ -31,13 +31,15 @@ namespace Greg.Handlers
                     if (guardStateComponent.State == GuardStateType.Aggressive)
                     {
                         Walk(gameObject, playerObjectHolder.GameObject.transform.position, speed, pathFinderHolder);
+                    
+                        continue;
                     }
                     else if (guardStateComponent.State == GuardStateType.Investigative)
                     {
                         gameObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-                    }
                     
-                    continue;
+                        continue;
+                    }
                 }
                 
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
