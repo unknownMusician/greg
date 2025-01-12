@@ -1,3 +1,4 @@
+using System.Linq;
 using AreYouFruits.Events;
 using Greg.Components;
 using Greg.Data;
@@ -27,6 +28,11 @@ namespace Greg.Handlers
 
                 pocketComponent.StoredItemId = pocketComponent.InitialItemId;
                 
+                var artifactItemSpriteComponent = pocketComponent.GetComponent<ArtifactItemSpriteComponent>();
+
+                var itemSettings = builtDataHolder.ItemSettings.First(settings => settings.Id == pocketComponent.StoredItemId.GetOrThrow());
+
+                artifactItemSpriteComponent.Icon.sprite = itemSettings.Icon;
             }
         }
     }
