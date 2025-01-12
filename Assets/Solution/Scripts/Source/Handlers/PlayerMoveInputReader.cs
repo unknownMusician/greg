@@ -1,6 +1,7 @@
 using AreYouFruits.Events;
 using Greg.Events;
 using Greg.Global.Api;
+using Greg.Holders;
 using UnityEngine;
 
 namespace Greg.Handlers
@@ -9,9 +10,15 @@ namespace Greg.Handlers
     {
         [EventHandler]
         private static void Handle(
-            UpdateEvent _
+            UpdateEvent _,
+            IsGameEndedHolder isGameEndedHolder
         )
         {
+            if (isGameEndedHolder.IsGameEnded)
+            {
+                return;
+            }
+            
             var direction = Vector3.zero;
 
             if (Input.GetKey(KeyCode.W))

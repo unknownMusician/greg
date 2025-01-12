@@ -24,6 +24,7 @@ namespace Greg.Global.Holders
         [Header("Guards")]
         [field: SerializeField] public float GuardLookDistance { get; private set; }
         [field: SerializeField] public float GuardLookAngle { get; private set; }
+        [field: SerializeField] public float CatchDistance { get; private set; }
         
         [Header("Innocents")]
         [field: SerializeField] public float PocketItemSpawnProbability { get; private set; }

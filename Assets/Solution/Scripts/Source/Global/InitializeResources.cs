@@ -23,6 +23,7 @@ namespace Greg.Global
             ResourcesLocator.Add(new IsGamePausedHolder());
             ResourcesLocator.Add(new IsSoundMutedHolder());
             ResourcesLocator.Add(new PlayerInteractionTargetHolder());
+            ResourcesLocator.Add(new IsGameEndedHolder());
         }
     }
 }

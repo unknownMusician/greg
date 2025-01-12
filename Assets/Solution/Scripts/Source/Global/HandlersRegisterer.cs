@@ -46,6 +46,7 @@ namespace Greg.Global
             eventBus.Subscribe(new GuardStateVisualizer());
             eventBus.Subscribe(new GuardLookAreaVisualizer());
             eventBus.Subscribe(new GuardsPlayerLostHandler());
+            eventBus.Subscribe(new GuardsPlayerCatcher());
             
             eventBus.Subscribe(new InnocentInitializer());
             eventBus.Subscribe(new CharacterHatInitializer());
@@ -63,6 +64,9 @@ namespace Greg.Global
             eventBus.Subscribe(new LevelMoneyStorageInitializer());
             eventBus.Subscribe(new LevelMoneyMaxValueUpdater());
             eventBus.Subscribe(new LevelMoneyStorageVisualUpdater());
+
+            eventBus.Subscribe(new GameEnder());
+            eventBus.Subscribe(new GameRestarter());
         }
     }
 }
