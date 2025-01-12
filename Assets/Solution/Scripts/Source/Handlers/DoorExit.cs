@@ -17,7 +17,7 @@ namespace Greg.Handlers
             BuiltDataHolder builtDataHolder
             )
         {
-            if (!Input.GetKeyDown(KeyCode.E))
+            if (!Input.GetKeyDown(KeyCode.Q))
             {
                 return;
             }
