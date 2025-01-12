@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045227335811196448}
+  - component: {fileID: 5516919700588338068}
   m_Layer: 5
   m_Name: BlockInventoryMoney
   m_TagString: Untagged
@@ -37,6 +38,19 @@ RectTransform:
   m_AnchoredPosition: {x: -436.9015, y: -1.6313171}
   m_SizeDelta: {x: 170.9538, y: 52.4628}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5516919700588338068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253452904875892931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87184efc758941479257f2abfbba8585, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 2125695534948597701}
 --- !u!1 &287248016935159467
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,6 +708,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4634395268720403954}
+  - component: {fileID: 2266440486918604680}
+  - component: {fileID: 3017645880422559646}
   m_Layer: 5
   m_Name: BlockMoney
   m_TagString: Untagged
@@ -722,6 +738,32 @@ RectTransform:
   m_AnchoredPosition: {x: 366, y: -1.6313171}
   m_SizeDelta: {x: 290.7568, y: 52.4628}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2266440486918604680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880843414359435724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a04fe62e3eb444caf17d6436295fc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 2914487486636853669}
+--- !u!114 &3017645880422559646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880843414359435724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05bd96ff65634b128c6c2eb140b25a8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Text: {fileID: 7878371080847758082}
 --- !u!1 &1902782663828669812
 GameObject:
   m_ObjectHideFlags: 0
