@@ -1,6 +1,9 @@
 using AreYouFruits.Events;
+using Greg.Components;
+using Greg.Data;
 using Greg.Events;
 using Greg.Global.Api;
+using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
 
@@ -11,20 +14,42 @@ namespace Greg.Handlers
         [EventHandler]
         private static void Handle(
             UpdateEvent _,
-            IsGameEndedHolder isGameEndedHolder
+            IsGameEndedHolder isGameEndedHolder,
+            StealProgressHolder stealProgressHolder,
+            PlayerInteractionTargetHolder playerInteractionTargetHolder,
+            BuiltDataHolder builtDataHolder
             )
         {
-            if (isGameEndedHolder.IsGameEnded)
+            if (isGameEndedHolder.IsGameEnded || !playerInteractionTargetHolder.Value.IsInitialized)
             {
                 return;
             }
             
-            if (!Input.GetKeyDown(KeyCode.F))
+            var interactionTargetComponent = playerInteractionTargetHolder.Value.GetOrThrow();
+
+            if (interactionTargetComponent.InteractionTargetType is not (InteractionTargetType.Innocent or InteractionTargetType.Artifact))
             {
                 return;
             }
+            
+            if (!Input.GetKey(KeyCode.F))
+            {
+                stealProgressHolder.StealingProgressNormalized = 0f;
+                interactionTargetComponent.GetComponent<InteractionProgressViewComponent>().LoadingBarHolder.localScale = new Vector3(1f - stealProgressHolder.StealingProgressNormalized, 1f, 1f);
+                return;
+            }
+            
+            if (stealProgressHolder.StealingProgressNormalized >= 1f)
+            {
+                EventContext.Bus.Invoke(new PlayerStealInputEvent());
+                stealProgressHolder.StealingProgressNormalized = 0f;
+                return;
+            }
+            
+            var interactionProgressViewComponent = interactionTargetComponent.GetComponent<InteractionProgressViewComponent>();
+            stealProgressHolder.StealingProgressNormalized += Time.unscaledDeltaTime / builtDataHolder.StealDurationInSeconds;
 
-            EventContext.Bus.Invoke(new PlayerStealInputEvent());
+            interactionProgressViewComponent.LoadingBarHolder.localScale = new Vector3(1f - stealProgressHolder.StealingProgressNormalized, 1f, 1f);
         }
     }
 }
