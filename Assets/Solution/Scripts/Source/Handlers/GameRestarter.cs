@@ -16,9 +16,7 @@ namespace Greg.Handlers
             RestartButtonClickedEvent _
         )
         {
-            typeof(ResourcesLocator)
-                .GetField("Resourses", BindingFlags.Static | BindingFlags.NonPublic)
-                ?.SetValue(null, new TypedDictionary());
+            ResourcesLocator.Clear();
 
             EventContext.Bus = new EventBus(new CachedOrderProvider(new Optional<IReadOnlyDictionary<Type, int>>(),
                     new Optional<int>()));
