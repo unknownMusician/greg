@@ -19,6 +19,7 @@ namespace Greg.Global.Holders
         [field: SerializeField] public GameObject ResultWindow { get; private set; }
         [field: SerializeField] public GameObject PauseButton { get; private set; }
         [field: SerializeField] public GameObject MuteButton { get; private set; }
+        [field: SerializeField] public GameObject StartScreen { get; private set; }
         [field: SerializeField] public Bounds LevelBounds { get; private set; }
         [field: SerializeField] public PlayerHatVisualComponent PlayerHatVisualComponent { get; private set; }
         [field: SerializeField] public CollectedMoneyTextComponent CollectedMoneyTextComponent { get; private set; }
