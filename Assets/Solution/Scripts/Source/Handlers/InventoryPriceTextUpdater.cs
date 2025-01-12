@@ -1,5 +1,6 @@
 using System.Linq;
 using AreYouFruits.Events;
+using Greg.Components;
 using Greg.Events;
 using Greg.Global.Holders;
 using Greg.Holders;
@@ -12,13 +13,18 @@ namespace Greg.Handlers
         private static void Handle(
             InventoryChangedEvent _,
             InventoryItemsHolder inventoryItemsHolder,
-            BuiltDataHolder builtDataHolder,
-            SceneDataHolder sceneDataHolder
-            )
+            ComponentsResource componentsResource,
+            BuiltDataHolder builtDataHolder
+        )
         {
             var sum = inventoryItemsHolder.Items
                 .Sum(itemId => builtDataHolder.ItemSettings.First(s => s.Id == itemId).Price);
-            sceneDataHolder.InventoryPriceText.text = $"{sum}";
+            var formattedSum = $"{sum}";
+            
+            foreach (var gameObject in componentsResource.Get<InventoryMoneyTextComponent>())
+            {
+                gameObject.GetComponent<InventoryMoneyTextComponent>().Text.text = formattedSum;
+            }
         }
     }
 }
