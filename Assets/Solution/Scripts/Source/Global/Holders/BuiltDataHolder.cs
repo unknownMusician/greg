@@ -48,5 +48,8 @@ namespace Greg.Global.Holders
         
         [Header("Path")]
         [field: SerializeField] public PathFinderRoom[] Rooms { get; private set; }
+        
+        [Header("Door")]
+        [field: SerializeField] public float ExitDistance { get; private set; }
     }
 }
