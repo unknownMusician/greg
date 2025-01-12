@@ -23,6 +23,7 @@ namespace Greg.Global
             eventOrderer.Order<InitializePredefinedResources>().Before<InitializeResources>();
             eventOrderer.Order<InitializeResources>().Before<CharactersInitialSpawner>();
             eventOrderer.Order<InitializeResources>().Before<StealablesHolderInitializer>();
+            eventOrderer.Order<InitializeResources>().Before<PathFindingGridInitializer>();
         }
 
         private static void OrderUpdate(GroupGraphOrderer orderer)
