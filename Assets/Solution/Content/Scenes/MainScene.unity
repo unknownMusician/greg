@@ -129,11 +129,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4661512486024778882, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
   m_PrefabInstance: {fileID: 5573962133792791579}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &672026463 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 1298967680059230053, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
-  m_PrefabInstance: {fileID: 1116128083}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &750091589
 GameObject:
   m_ObjectHideFlags: 0
@@ -183,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <EnvironmentContainer>k__BackingField: {fileID: 1191130553}
-  <InventoryCellsParent>k__BackingField: {fileID: 672026463}
+  <InventoryCellsParent>k__BackingField: {fileID: 0}
   <PlayerSpawnPoint>k__BackingField: {fileID: 270487071}
   <InnocentSpawnPoints>k__BackingField:
   - {fileID: 1851190858}
@@ -354,6 +349,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2632849723249914289, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472037552701045732, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472037552701045732, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472037552701045732, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5472037552701045732, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
