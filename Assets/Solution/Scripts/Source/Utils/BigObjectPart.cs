@@ -1,5 +1,4 @@
-﻿using System;
-using Greg.Utils.TagSearcher;
+﻿using Greg.Utils.TagSearcher;
 using UnityEngine;
 
 namespace Greg.Utils
