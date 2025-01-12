@@ -331,6 +331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 1382387133021754469}
+  rigidbody: {fileID: 6639560793263941748}
   threshold: 0.1
 --- !u!1 &7000033887634823752
 GameObject:

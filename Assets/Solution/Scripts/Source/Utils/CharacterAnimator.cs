@@ -7,15 +7,14 @@ namespace Greg.Utils
         private static readonly int AnimatorBoolIsMoving = Animator.StringToHash("IsMoving");
         
         [SerializeField] private Animator animator;
+        [SerializeField] private new Rigidbody2D rigidbody;
         [SerializeField] private float threshold;
         
         private Vector3 lastPosition;
         
         private void Update()
         {
-            // todo: to positions or smth
-            var isMoving = Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) ||
-                           Input.GetKey(KeyCode.D);
+            var isMoving = rigidbody.linearVelocity.sqrMagnitude > threshold * threshold;
             
             animator.SetBool(AnimatorBoolIsMoving, isMoving);
 
