@@ -42,7 +42,13 @@ namespace Greg.Handlers
                 
                 var walkingNpcComponent = gameObject.GetComponent<WalkingNpcComponent>();
 
-                var targetWalkPoint = sceneDataHolder.WalkPointsParent.GetChild(walkingNpcComponent.TargetIndex).position;
+                if (!walkingNpcComponent.TargetIndex.TryGet(out var targetIndex))
+                {
+                    targetIndex = Random.Range(0, sceneDataHolder.WalkPointsParent.childCount);
+                    walkingNpcComponent.TargetIndex = targetIndex;
+                }
+
+                var targetWalkPoint = sceneDataHolder.WalkPointsParent.GetChild(targetIndex).position;
 
                 if (!Mathf.Approximately((gameObject.transform.position.XY() - targetWalkPoint.XY()).sqrMagnitude, 0))
                 {
@@ -51,7 +57,7 @@ namespace Greg.Handlers
                 }
                 
                 walkingNpcComponent.WaitedTime += Time.deltaTime;
-                if (walkingNpcComponent.WaitedTime > walkingNpcComponent.NeededTime)
+                if (walkingNpcComponent.WaitedTime >= walkingNpcComponent.NeededTime)
                 {
                     var index = Random.Range(0, sceneDataHolder.WalkPointsParent.childCount);
 
