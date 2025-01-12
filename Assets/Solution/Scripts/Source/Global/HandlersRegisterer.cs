@@ -52,6 +52,8 @@ namespace Greg.Global
             eventBus.Subscribe(new InteractionTargetStateChangeHandler());
             
             eventBus.Subscribe(new PathFindingGridInitializer());
+            eventBus.Subscribe(new PathFindingInitializer());
+            eventBus.Subscribe(new PathFindingVisualizer());
         }
     }
 }

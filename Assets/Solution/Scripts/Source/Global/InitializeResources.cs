@@ -18,6 +18,7 @@ namespace Greg.Global
             ResourcesLocator.Add(new NpcHolder());
             
             ResourcesLocator.Add(new InventoryItemsHolder());
+            ResourcesLocator.Add(new PathFinderHolder());
 
             ResourcesLocator.Add(new IsGamePausedHolder());
             ResourcesLocator.Add(new IsSoundMutedHolder());
