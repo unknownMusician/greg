@@ -13,7 +13,7 @@ namespace Greg.Utils
 
         private void OnDestroy()
         {
-            ResourcesLocator.Get<ComponentsResource>().Unregister(gameObject);
+            ResourcesLocator.TryGet<ComponentsResource>().Switch(r => r.Unregister(gameObject));
         }
     }
 }
