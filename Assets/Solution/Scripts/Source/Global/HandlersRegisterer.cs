@@ -53,7 +53,7 @@ namespace Greg.Global
             
             eventBus.Subscribe(new InteractionTargetTriggerEnterHandler());
             eventBus.Subscribe(new InteractionTargetTriggerExitHandler());
-            eventBus.Subscribe(new InteractionTargetStateChangeHandler());
+            eventBus.Subscribe(new InnocentInteractionStateChangeHandler());
             
             eventBus.Subscribe(new PathFindingGridInitializer());
             
