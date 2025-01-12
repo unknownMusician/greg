@@ -74,6 +74,7 @@ namespace Greg.Global
             eventBus.Subscribe(new DoorExit());
             eventBus.Subscribe(new ArtifactsInitializer());
             eventBus.Subscribe(new ArtifactInteractionStateChangeHandler());
+            eventBus.Subscribe(new PlayerArtifactStealer());
         }
     }
 }

@@ -131,7 +131,7 @@ MonoBehaviour:
     <SourceType>k__BackingField: 1
     <Price>k__BackingField: 8000
     <Difficulty>k__BackingField: 6
-  - <Id>k__BackingField: 20
+  - <Id>k__BackingField: 19
     <Name>k__BackingField: Pect
     <Icon>k__BackingField: {fileID: -2633261408869903435, guid: f625523b8e43c5a47a0e0396decd86b1, type: 3}
     <SourceType>k__BackingField: 1
@@ -155,19 +155,19 @@ MonoBehaviour:
     <SourceType>k__BackingField: 1
     <Price>k__BackingField: 8000
     <Difficulty>k__BackingField: 6
-  - <Id>k__BackingField: 24
+  - <Id>k__BackingField: 23
     <Name>k__BackingField: Skull
     <Icon>k__BackingField: {fileID: -2739807658926110822, guid: f854546c2bff53d43b1a5d3dbbd1b008, type: 3}
     <SourceType>k__BackingField: 1
     <Price>k__BackingField: 8000
     <Difficulty>k__BackingField: 6
-  - <Id>k__BackingField: 25
+  - <Id>k__BackingField: 24
     <Name>k__BackingField: Scull H
     <Icon>k__BackingField: {fileID: 8345560674596901204, guid: f3c6efed319faa14aa96d20d3b8deeae, type: 3}
     <SourceType>k__BackingField: 1
     <Price>k__BackingField: 8000
     <Difficulty>k__BackingField: 6
-  - <Id>k__BackingField: 26
+  - <Id>k__BackingField: 25
     <Name>k__BackingField: Skull R
     <Icon>k__BackingField: {fileID: 2387646720917789905, guid: d90f4d78a45ce3f4eaa08ac72bc4362c, type: 3}
     <SourceType>k__BackingField: 1
