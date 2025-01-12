@@ -57,7 +57,7 @@ namespace Greg.Handlers
 
         private static bool IsIllegal()
         {
-            return Input.GetKey(KeyCode.F) || !Input.GetKey(KeyCode.E);
+            return Input.GetKey(KeyCode.F) || Input.GetKey(KeyCode.E);
         }
     }
 }
