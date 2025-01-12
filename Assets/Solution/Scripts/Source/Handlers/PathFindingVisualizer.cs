@@ -34,7 +34,7 @@ namespace Greg.Handlers
                 {
                     Gizmos.color = ColorByRoomId(room.RoomId);
                     Gizmos.DrawWireCube(room.Area.center, room.Area.size);
-                    Handles.Label(room.Area.center, room.RoomId.ToString());
+                    //Handles.Label(room.Area.center, room.RoomId.ToString());
                 
                     foreach (var transition in room.Transitions)
                     {
