@@ -213,8 +213,8 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8460501258858390464}
-  - {fileID: 638267644510390166}
   - {fileID: 4732515768252169982}
+  - {fileID: 638267644510390166}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &6639560793263941748
@@ -511,8 +511,8 @@ GameObject:
   - component: {fileID: 2976139643577916200}
   - component: {fileID: 1969228076304754931}
   - component: {fileID: 4767609185222279741}
-  m_Layer: 7
-  m_Name: InteractionTargetTriggerEventSender
+  m_Layer: 8
+  m_Name: InteractionZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

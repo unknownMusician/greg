@@ -25,7 +25,7 @@ namespace Greg.Utils
 
         private void HandleTriggerEnter(Collider2D collider)
         {
-            if (!collider.TryGetComponent(out InteractionTargetComponent interactionTargetComponent))
+            if (!collider.transform.parent.TryGetComponent(out InteractionTargetComponent interactionTargetComponent))
             {
                 return;
             }
@@ -38,7 +38,7 @@ namespace Greg.Utils
         
         private void HandleTriggerExit(Collider2D collider)
         {
-            if (!collider.TryGetComponent(out InteractionTargetComponent interactionTargetComponent))
+            if (!collider.transform.parent.TryGetComponent(out InteractionTargetComponent interactionTargetComponent))
             {
                 return;
             }

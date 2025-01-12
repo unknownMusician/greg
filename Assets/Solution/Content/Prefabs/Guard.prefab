@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1617635374968065858}
   - component: {fileID: 8696286237758140232}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Visual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -65,7 +65,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6093452869747321231}
   - component: {fileID: 3079518336484956967}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -152,7 +152,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5107293221196556518}
   - component: {fileID: 279053089859188934}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -230,7 +230,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5181863457057932220}
   - component: {fileID: 8445122857216083310}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: StateContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -330,7 +330,7 @@ GameObject:
   - component: {fileID: 1417315451358680379}
   - component: {fileID: 2947326617246326270}
   - component: {fileID: 5892780990785601479}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Guard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -543,7 +543,7 @@ GameObject:
   m_Component:
   - component: {fileID: 660932196270163700}
   - component: {fileID: 7446149125955859671}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -631,7 +631,7 @@ GameObject:
   - component: {fileID: 6708940946664912982}
   - component: {fileID: 4200567023098103113}
   - component: {fileID: 4105622780789038891}
-  m_Layer: 7
+  m_Layer: 9
   m_Name: ExclamationMark
   m_TagString: Untagged
   m_Icon: {fileID: 0}
