@@ -40,6 +40,150 @@ MonoBehaviour:
     <SourceType>k__BackingField: 0
     <Price>k__BackingField: 333
     <Difficulty>k__BackingField: 4
+  - <Id>k__BackingField: 4
+    <Name>k__BackingField: Ark
+    <Icon>k__BackingField: {fileID: 6938374365682557811, guid: fab0422e9f37cdb478df45d403339cc8, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 4000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 5
+    <Name>k__BackingField: Banana
+    <Icon>k__BackingField: {fileID: 7381965769198725172, guid: c4b8ef7d6881e66489a0cb5a40162a8a, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 4500
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 6
+    <Name>k__BackingField: Sword
+    <Icon>k__BackingField: {fileID: -6433056010351858686, guid: 06f87c05250f2394c9033c73437bf2ff, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 5000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 7
+    <Name>k__BackingField: Book
+    <Icon>k__BackingField: {fileID: 2353571312451627304, guid: 63e79976f561c7f499209b7aae48ef96, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 5500
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 8
+    <Name>k__BackingField: Cleo
+    <Icon>k__BackingField: {fileID: -8025907009570885076, guid: dd86760fc9c11ab45ae7260f4a4cacdb, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 6000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 9
+    <Name>k__BackingField: Crystal
+    <Icon>k__BackingField: {fileID: 5293031974318352618, guid: 03c55dc2797ce544b838b0e3aa1b44e8, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 6500
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 10
+    <Name>k__BackingField: Diamond
+    <Icon>k__BackingField: {fileID: 3244622203517571467, guid: 839b413976c6dd24094fa8e97e3afa8c, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 7500
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 11
+    <Name>k__BackingField: Golden Hat 1
+    <Icon>k__BackingField: {fileID: 6332559508797743287, guid: 091be69fb42cb6a4abad479e95211cf3, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 12
+    <Name>k__BackingField: Golden Hat 2
+    <Icon>k__BackingField: {fileID: 5286323207153658023, guid: 142dd686e79e57d45b5cdfcdc18cede1, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 13
+    <Name>k__BackingField: Golden Hat 3
+    <Icon>k__BackingField: {fileID: 8617080134617782168, guid: 49b870b1c2f90a84e84e80bca085c8ba, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 14
+    <Name>k__BackingField: Golden Hat 4
+    <Icon>k__BackingField: {fileID: -2877677678815207312, guid: df744f8d08e28c240baf515aadd84220, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 15
+    <Name>k__BackingField: Helmet
+    <Icon>k__BackingField: {fileID: 309628545801974608, guid: 24224a3dafa1ab74297dad6149d970f1, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 16
+    <Name>k__BackingField: Kinder
+    <Icon>k__BackingField: {fileID: -4144385497642182692, guid: 963bb98c7887abe4dbcda25ec3a7576e, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 17
+    <Name>k__BackingField: Mug
+    <Icon>k__BackingField: {fileID: 6666875012819194, guid: f2ef50a07867d2d4290ad465d31ab120, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 18
+    <Name>k__BackingField: Nuke
+    <Icon>k__BackingField: {fileID: -1242187556347939975, guid: a656a3c0ad2469c46a21e171d6a35926, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 20
+    <Name>k__BackingField: Pect
+    <Icon>k__BackingField: {fileID: -2633261408869903435, guid: f625523b8e43c5a47a0e0396decd86b1, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 20
+    <Name>k__BackingField: Rune
+    <Icon>k__BackingField: {fileID: -8386645779307496254, guid: 6fcba0c61d7d22440964839399e0b384, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 21
+    <Name>k__BackingField: Sauron's Ring
+    <Icon>k__BackingField: {fileID: 5867704936323903554, guid: 5aa0e24fd67759f4f93df7d397a29d4c, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 22
+    <Name>k__BackingField: Scroll
+    <Icon>k__BackingField: {fileID: 897710771807637462, guid: 892d2da48cc6f8042a980cb493f134b5, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 24
+    <Name>k__BackingField: Skull
+    <Icon>k__BackingField: {fileID: -2739807658926110822, guid: f854546c2bff53d43b1a5d3dbbd1b008, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 25
+    <Name>k__BackingField: Scull H
+    <Icon>k__BackingField: {fileID: 8345560674596901204, guid: f3c6efed319faa14aa96d20d3b8deeae, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 26
+    <Name>k__BackingField: Skull R
+    <Icon>k__BackingField: {fileID: 2387646720917789905, guid: d90f4d78a45ce3f4eaa08ac72bc4362c, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 26
+    <Name>k__BackingField: Ves
+    <Icon>k__BackingField: {fileID: 7706390822701730368, guid: f7dfcd23372fb164ea0eff4080868ebb, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
+  - <Id>k__BackingField: 27
+    <Name>k__BackingField: Shield
+    <Icon>k__BackingField: {fileID: -6717884257390833292, guid: 4f0bdd20d199f4142a13ed46cd57375b, type: 3}
+    <SourceType>k__BackingField: 1
+    <Price>k__BackingField: 8000
+    <Difficulty>k__BackingField: 6
   <HatSettings>k__BackingField:
   - <Id>k__BackingField: 0
     <Icon>k__BackingField: {fileID: 5064564714242801281, guid: 59d09c8c87c08cb47923b207a19bc10d, type: 3}
@@ -349,4 +493,7 @@ MonoBehaviour:
       Door: {x: -680.2, y: -433.1}
     - RoomId: 2
       Door: {x: -679.5, y: -177.5}
+  <WalkDelay>k__BackingField:
+    Min: 0
+    Max: 0
   <ExitDistance>k__BackingField: 5
