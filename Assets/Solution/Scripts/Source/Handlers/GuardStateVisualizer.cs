@@ -26,9 +26,9 @@ namespace Greg.Handlers
                 guardStateViewComponent.Icon.gameObject.SetActive(state == GuardStateType.Investigative);
 
                 if (state == GuardStateType.Investigative && 
-                    guard.GetComponent<GuardInvestigateGoalComponent>().GoalItemId.TryGet(out var goalItemId))
+                    guard.GetComponent<GuardInvestigateGoalComponent>().GoalHatId.TryGet(out var goalItemId))
                 {
-                    guardStateViewComponent.Icon.sprite = builtDataHolder.ItemSettings.First(s => s.Id == goalItemId).Icon;
+                    guardStateViewComponent.Icon.sprite = builtDataHolder.HatSettings.First(s => s.Id == goalItemId).Icon;
                 }
             }
         }

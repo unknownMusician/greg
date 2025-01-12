@@ -5,6 +5,6 @@ namespace Greg.Components
 {
     public sealed class GuardInvestigateGoalComponent : MonoBehaviour
     {
-        public Optional<uint> GoalItemId { get; set; }
+        public Optional<uint> GoalHatId { get; set; }
     }
 }
