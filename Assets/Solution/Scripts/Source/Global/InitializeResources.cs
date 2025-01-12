@@ -16,6 +16,7 @@ namespace Greg.Global
             ResourcesLocator.Add(new PlayerObjectHolder());
             ResourcesLocator.Add(new StealablesHolder());
             ResourcesLocator.Add(new NpcHolder());
+            ResourcesLocator.Add(new StealProgressHolder());
             
             ResourcesLocator.Add(new InventoryItemsHolder());
             ResourcesLocator.Add(new PathFinderHolder());
