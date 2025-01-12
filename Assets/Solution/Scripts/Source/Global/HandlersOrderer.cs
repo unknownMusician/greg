@@ -28,6 +28,7 @@ namespace Greg.Global
             eventOrderer.Order<InitializeResources>().Before<PathFindingGridInitializer>();
             eventOrderer.Order<InitializeResources>().Before<LevelMoneyStorageInitializer>();
             eventOrderer.Order<InitializeResources>().Before<PathFindingInitializer>();
+            eventOrderer.Order<InitializeResources>().Before<SpeedrunTimeResetter>();
             
             eventOrderer.Order<LevelMoneyStorageInitializer>().Before<CharactersInitialSpawner>();
         }
@@ -35,6 +36,8 @@ namespace Greg.Global
         private static void OrderUpdate(GroupGraphOrderer orderer)
         {
             var eventOrderer = orderer.ForEvent<UpdateEvent>();
+            
+            eventOrderer.Order<SpeedrunTimeUpdater>().Before<SpeedrunTimeViewUpdater>();
         }
         
         private static void OrderCharacterSpawnedEvent(GroupGraphOrderer orderer)

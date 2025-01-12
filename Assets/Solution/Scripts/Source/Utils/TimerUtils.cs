@@ -7,7 +7,7 @@ namespace Greg.Utils
     {
         public static string GetTimer(this StartRealTimeHolder startRealTimeHolder)
         {
-            var time = Time.realtimeSinceStartup - startRealTimeHolder.StartRealTime;
+            var time = startRealTimeHolder.Time;
 
             var roundedTime = Mathf.FloorToInt(time);
 

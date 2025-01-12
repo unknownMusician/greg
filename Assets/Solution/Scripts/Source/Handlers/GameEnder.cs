@@ -13,16 +13,15 @@ namespace Greg.Handlers
             GameEndedEvent _,
             IsGameEndedHolder isGameEndedHolder,
             SceneDataHolder sceneDataHolder,
-            InventoryItemsHolder inventoryItemsHolder,
-            BuiltDataHolder builtDataHolder,
-            StartRealTimeHolder startRealTimeHolder
+            StartRealTimeHolder startRealTimeHolder,
+            LevelMoneyStorageHolder levelMoneyStorageHolder
         )
         {
             isGameEndedHolder.IsGameEnded = true;
             
             sceneDataHolder.ResultWindow.SetActive(true);
-            sceneDataHolder.ResultMoneyText.text = $"MONEY: {inventoryItemsHolder.GetSum(builtDataHolder)}";
-            sceneDataHolder.ResultTimeText.text = $"TIME: {startRealTimeHolder.GetTimer()}";
+            sceneDataHolder.ResultMoneyText.text = $"{levelMoneyStorageHolder.CollectedMoneyValue}";
+            sceneDataHolder.ResultTimeText.text = $"{startRealTimeHolder.GetTimer()}";
         }
     }
 }
