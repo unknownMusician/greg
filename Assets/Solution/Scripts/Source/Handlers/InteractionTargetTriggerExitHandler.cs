@@ -1,4 +1,5 @@
 using AreYouFruits.Events;
+using AreYouFruits.Nullability;
 using Greg.Events;
 using Greg.Global.Api;
 using Greg.Holders;
@@ -17,10 +18,13 @@ namespace Greg.Handlers
             {
                 return;
             }
-            
-            playerInteractionTargetHolder.Value = null;
+
+            playerInteractionTargetHolder.Value = Optional.None();
                 
-            EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent());
+            EventContext.Bus.Invoke(new InteractionTargetStateChangedEvent()
+            {
+                InteractionTargetComponent = @event.InteractionTargetComponent,
+            });
         }
     }
 }
