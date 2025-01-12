@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5045227335811196448}
+  - component: {fileID: 5062289960184011941}
   - component: {fileID: 5516919700588338068}
   m_Layer: 5
   m_Name: BlockInventoryMoney
@@ -38,6 +39,18 @@ RectTransform:
   m_AnchoredPosition: {x: -436.9015, y: -1.6313171}
   m_SizeDelta: {x: 170.9538, y: 52.4628}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5062289960184011941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 253452904875892931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a99070dc0046b7a50d7c885cf27156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5516919700588338068
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -708,6 +721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4634395268720403954}
+  - component: {fileID: 6956175980743930430}
   - component: {fileID: 2266440486918604680}
   - component: {fileID: 3017645880422559646}
   m_Layer: 5
@@ -738,6 +752,18 @@ RectTransform:
   m_AnchoredPosition: {x: 366, y: -1.6313171}
   m_SizeDelta: {x: 290.7568, y: 52.4628}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6956175980743930430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880843414359435724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a99070dc0046b7a50d7c885cf27156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &2266440486918604680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2965,6 +2991,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6578575667017157958}
+  - component: {fileID: 3987753273808184100}
+  - component: {fileID: 4421321526317716306}
   m_Layer: 5
   m_Name: BlockHat
   m_TagString: Untagged
@@ -2992,6 +3020,31 @@ RectTransform:
   m_AnchoredPosition: {x: -915.1, y: -1.6313171}
   m_SizeDelta: {x: 60.1, y: 52.4628}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &3987753273808184100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974982593640248279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a99070dc0046b7a50d7c885cf27156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4421321526317716306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8974982593640248279}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ff027f26f1473391434d0053bb9a65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Image: {fileID: 8373391582455209726}
 --- !u!1001 &3513435413559869576
 PrefabInstance:
   m_ObjectHideFlags: 0
