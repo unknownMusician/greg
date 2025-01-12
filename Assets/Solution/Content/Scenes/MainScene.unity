@@ -255,7 +255,7 @@ MonoBehaviour:
   <ResultWindow>k__BackingField: {fileID: 406283426}
   <PauseButton>k__BackingField: {fileID: 1116128084}
   <MuteButton>k__BackingField: {fileID: 1932635604}
-  <StartScreen>k__BackingField: {fileID: 0}
+  <StartScreen>k__BackingField: {fileID: 1754805773}
   <LevelBounds>k__BackingField:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
@@ -705,6 +705,11 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5409468442297072903, guid: 3bf456540d4a2544f9c95cf659faf664, type: 3}
   m_PrefabInstance: {fileID: 5573962133792791579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1754805773 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1168442511146575663, guid: f318cb92a2af43749a4859f5f58595ea, type: 3}
+  m_PrefabInstance: {fileID: 1116128083}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1851190858 stripped
 Transform:
