@@ -1,8 +1,10 @@
 using System.Linq;
 using AreYouFruits.Events;
+using AreYouFruits.Nullability;
 using Greg.Components;
 using Greg.Data;
 using Greg.Events;
+using Greg.Global.Api;
 using Greg.Global.Holders;
 using Greg.Holders;
 using UnityEngine;
@@ -18,7 +20,8 @@ namespace Greg.Handlers
             PlayerObjectHolder playerObjectHolder,
             BuiltDataHolder builtDataHolder,
             SceneDataHolder sceneDataHolder,
-            InventoryItemsHolder inventoryItemsHolder
+            InventoryItemsHolder inventoryItemsHolder,
+            LevelMoneyStorageHolder levelMoneyStorageHolder
         )
         {
             Debug.Log($"[SafemanHatSwapper]");
@@ -45,13 +48,28 @@ namespace Greg.Handlers
             var playerHat = playerHatComponent.Hat.GetOrThrow();
             var playerHatSettings = builtDataHolder.HatSettings.First(settings => settings.Id == playerHat.HatId);
 
+            foreach (var playerHatInventorySlot in playerHat.InventorySlots)
+            {
+                playerHatInventorySlot.StoredItemId = Optional.None();
+            }
+            
             npcHatComponent.Hat = playerHat;
             playerHatComponent.Hat = npcHat;
             
             npcHatRendererComponent.SpriteRenderer.sprite = playerHatSettings.Icon;
             playerHatRendererComponent.SpriteRenderer.sprite = npcHatSettings.Icon;
-            
             sceneDataHolder.PlayerHatVisualComponent.Image.sprite = npcHatSettings.Icon;
+
+            foreach (var itemId in inventoryItemsHolder.Items)
+            {
+                levelMoneyStorageHolder.CollectedMoneyValue += builtDataHolder.ItemSettings.First(settings => settings.Id == itemId).Price;
+            }
+            
+            inventoryItemsHolder.Clear();
+
+            EventContext.Bus.Invoke(new LevelMoneyValueChangeEvent());
+            // JUST USE IT!!!
+            EventContext.Bus.Invoke(new PlayerHatSwappedEvent());
         }
     }
 }
