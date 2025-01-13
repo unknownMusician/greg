@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,10 +6,9 @@ namespace Greg.Utils
 {
     public sealed class ByDistanceVector2Comparer : IComparer<Vector2Int>
     {
+        public Dictionary<Vector2Int, KnownPathFinderCellInfo> knownCells;
+        public AaGrid2 grid;
         public Vector2Int target;
-        public Vector2Int start;
-        public Vector2 min;
-        public Vector2 cellScale;
         
         public int Compare(Vector2Int x, Vector2Int y)
         {
@@ -19,15 +17,10 @@ namespace Greg.Utils
 
         private float GetHeuristic(Vector2Int index)
         {
-            var distanceToTarget = (IndexToPosition(index) - IndexToPosition(target)).magnitude;
-            var distanceToStart = (IndexToPosition(index) - IndexToPosition(start)).magnitude;
+            var distanceToTarget = (index - target).magnitude;
+            var distanceToStart = knownCells[index].MinDistance;
             
             return distanceToTarget + distanceToStart;
-        }
-
-        private Vector2 IndexToPosition(Vector2Int index)
-        {
-            return Pathfinder.IndexToPosition(index, min, cellScale);
         }
     }
     
@@ -129,9 +122,6 @@ namespace Greg.Utils
             var comparer = new ByDistanceVector2Comparer
             {
                 target = finishIndex,
-                start = startIndex,
-                cellScale = cellScale,
-                min = min,
             };
 
             // todo: Check and probably invert comparer.
